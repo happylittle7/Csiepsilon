@@ -510,16 +510,52 @@ ul{
 /* for Smart Phone */
 @media (max-width: 767px) {
     html{
-        font-size: 8px;
+        font-size: 26px;
     }
+    .ul-mask{
+        opacity: 0;
+        visibility: hidden;
+        z-index: 101;
+        position: fixed;
+        background: rgba(0, 0, 0, 0.6);
+        height: 100%;
+        width: 100%;
+        transition: all 0.4s;
+    }
+    .ul-mask_active{
+        opacity: 1;
+        visibility: visible;
+    }
+    
     .header ul{
+        background-color: orange;
+        height: 100vh;
+        width: 550px;
         position: absolute;
         top: 0;
-        right: 0;
-        display: flex;
+        right: -550px;
+        z-index: 1000;
+        text-align: left;
+        transition: all 0.4s;
         flex-direction: column;
+        padding-top: 100px;
+    }
+    .ul_active{
+        right: 550px;
+    }
+    .header ul li{
+        display: block;
+        padding: 45px 40px;
     }
     .menu-bar{
+        position: absolute;
+        top: 50%;
+        transform:  translateY(-50%);
+        z-index: 1000;
+        font-size: 2.6rem;
+        color: white;
+        right: 0;
+        padding-right: 4rem;
         display: inline-block !important;
     }
 }
