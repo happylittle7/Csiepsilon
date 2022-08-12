@@ -53,6 +53,24 @@ body{
     object-fit: cover;
 }
 
+.bgimg-area{
+    z-index: -10;
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.bgimg-area img{
+    z-index: -9;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
 
 /* header lists */
 .header{
@@ -676,6 +694,5 @@ body{
     .header ul{
         display: none;
     }
-    
 }
 
