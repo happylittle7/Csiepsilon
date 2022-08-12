@@ -70,6 +70,7 @@ ul{
     justify-content: left;
     align-items: center;
     transition: all 0.6s;
+    padding-right: 20px;
 }
 .headerScroll{
     background-color: rgba(48, 39, 68, 1);
@@ -77,15 +78,13 @@ ul{
 .header-title{
     vertical-align: center;
     font-size: 3rem;
-    margin-left: 18rem;
-    margin-right: 4rem;
+    margin-left: 140px;
+    margin-right: 100px;
 }
 .header ul{
     font-size: 0;
     vertical-align: middle;
     list-style: none;
-    margin-right: 8rem;
-    margin-left: auto;
 }
 .header ul li{
     display: inline-block;
@@ -115,14 +114,6 @@ ul{
     text-decoration: none;
 }
 .menu-bar{
-    position: absolute;
-    top: 50%;
-    transform:  translateY(-50%);
-    z-index: 1000;
-    font-size: 3rem;
-    color: white;
-    right: 0;
-    padding-right: 4rem;
     display: none !important;
 }
 
@@ -229,6 +220,7 @@ ul{
 */
 
 .info{
+    width: 100%;
     margin-top: 10rem;
     display: flex;
     flex-wrap: wrap;
@@ -238,7 +230,7 @@ ul{
 }
 .slide-show{
     padding: 5rem 0;
-    width: 40rem;
+    width: 40%;
     margin: 0 auto;
     font-size: 0;
     position: relative;
@@ -293,11 +285,10 @@ ul{
     flex: 1;
 }
 .info ul{
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
+    display: flex;
+    flex-direction: column;
     list-style: none;
-    padding: 0 20rem;
+    padding: 0  120px;
 }
 .info ul li{
     display: inline-block;
@@ -535,35 +526,52 @@ ul{
 /* for mini tablet */
 @media(max-width: 1020px){
     html{
-        font-size: 8px;
+        font-size: 26px;
     }
     .ul-mask{
+        opacity: 0;
+        visibility: hidden;
+        z-index: 101;
         position: fixed;
-        background: rgb(114, 114, 114);
-        height: 100vh;
-        width: 100vw;
-    }
-    
-    .ul-list{
-        display: none;
-        padding-top: 10rem;
-        background-color: orange;
-        height: 100vh;
-        position: absolute;
-        top: 0;
-        right: -200px;
-        width: 200px;
-        z-index: 1000;
+        background: rgba(0, 0, 0, 0.6);
+        height: 100%;
+        width: 100%;
         transition: all 0.4s;
     }
-    .ul-listOpen{
-        right: 0px !important;
+    .ul-mask_active{
+        opacity: 1;
+        visibility: visible;
     }
+    
     .header ul{
-        display: flex;
+        background-color: orange;
+        height: 100vh;
+        width: 550px;
+        position: absolute;
+        top: 0;
+        right: -550px;
+        z-index: 1000;
+        text-align: left;
+        transition: all 0.4s;
         flex-direction: column;
+        padding-top: 100px;
+    }
+    .ul_active{
+        right: 550px;
+    }
+    .header ul li{
+        display: block;
+        padding: 45px 40px;
     }
     .menu-bar{
+        position: absolute;
+        top: 50%;
+        transform:  translateY(-50%);
+        z-index: 1000;
+        font-size: 2.6rem;
+        color: white;
+        right: 0;
+        padding-right: 4rem;
         display: inline-block !important;
     }
 }

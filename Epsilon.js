@@ -20,11 +20,19 @@ window.addEventListener("scroll", () =>{
 })
 
 const bar = document.querySelector(".menu-bar");
-const ulList = document.querySelector(".ul-list");
+const ulList = document.querySelector(".ul");
+const ulMask = document.querySelector(".ul-mask");
+
 bar.addEventListener("click", () => {
     if(ulList.classList.contains("ul-listOpen")){
-        ulList.classList.remove("ul-listOpen");
+        ulList.classList.remove("ul_active");
+        ulMask.classList.remove("ul-mask_active");
     }else{
-        ulList.classList.add("ul-listOpen");
+        ulList.classList.add("ul_active");
+        ulMask.classList.add("ul-mask_active");
     }
+})
+ulMask.addEventListener("click", () => {
+    ulList.classList.remove("ul_active");
+    ulMask.classList.remove("ul-mask_active");
 })
