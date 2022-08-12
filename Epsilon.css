@@ -1,0 +1,570 @@
+:root{
+    /* ordinary : 40:35 */
+    /* happy    : 50 40 */
+    --card-height:  40rem;
+    --card-width:   35rem;
+    
+}
+
+/*      z-index 
+    -100:    video
+    50  :    tag
+    90  :    hero-text    
+    100 :    header
+    999 :    mask
+    1000:    text-card
+*/
+
+
+*{
+    margin: 0;
+    padding: 0;
+}
+html{
+    font-size: 10px;
+}
+
+body{
+    box-sizing: border-box;
+    background-color: rgb(70, 94, 121);
+}
+ul{
+    font-size: 0;
+}
+.i{
+    display: inline-block;
+}
+
+
+/* bg video */
+.video-area{
+    z-index: -10;
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.video{
+    z-index: -9;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+/* header lists */
+.header{
+    min-height: 6rem;
+    z-index: 100;
+    position: sticky;
+    right: 0;
+    top: 0;
+    width: 100%;
+    background-color: transparent;
+    color: #fff;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    transition: all 0.6s;
+}
+.headerScroll{
+    background-color: rgba(48, 39, 68, 1);
+}
+.header-title{
+    vertical-align: center;
+    font-size: 3rem;
+    margin-left: 18rem;
+    margin-right: 4rem;
+}
+.header ul{
+    font-size: 0;
+    vertical-align: middle;
+    list-style: none;
+    margin-right: 8rem;
+    margin-left: auto;
+}
+.header ul li{
+    display: inline-block;
+    font-weight: 0;
+    font-size: 2rem;
+    padding: 2rem 3.5rem;
+    margin: 0 1rem;
+    transition: all 0.5s;
+    cursor: pointer;
+    position: relative;
+}
+.header ul li::after{
+    position: absolute;
+    top: 75%;
+    left: 0;
+    content: "";
+    width: 0px;
+    height: 0.2rem;
+    background-color: white;
+    transition: all 0.4s;
+}
+.header ul li:hover::after{
+    width: 100%;
+}
+.header ul li a,.header ul li a:visited{
+    color: white;
+    text-decoration: none;
+}
+.menu-bar{
+    position: absolute;
+    top: 50%;
+    transform:  translateY(-50%);
+    z-index: 1000;
+    font-size: 3rem;
+    color: white;
+    right: 0;
+    padding-right: 4rem;
+    display: none !important;
+}
+
+/* hero */
+.hero{
+    display: inline-block;
+    width: 48%;
+    margin-top: 22rem;
+    margin-bottom: 15rem;
+    color: black;
+    padding: 4rem;
+    background-color: rgba(255, 255, 255, 0.6);
+    display: flex;
+    justify-content: end;
+    backdrop-filter: blur(12px);
+    animation: openHero 0.6s ease-out;
+}
+@keyframes openHero{
+    0%{
+        width:0;
+    }
+    100%{
+        width: 48%;
+    }
+}
+/* texts on the video */
+.hero-text{
+    display: inline-block;
+    position: relative;
+    z-index: 0;
+    opacity: 0;
+    animation: openHeroText 0.6s 0.6s linear forwards;
+}
+@keyframes openHeroText{
+    0%{
+        position: relative;
+        top: 20px;
+        opacity: 0;
+    }
+    100%{
+        top: 0;
+        opacity: 1;
+    }
+}
+.hero-text h1{
+    margin-top: 0.2rem;
+    margin-bottom: 0.4rem;
+    font-size: 5.6rem;
+}
+.hero-text h2{
+    font-size: 2.4rem;
+}
+.hero-text h2:nth-child(2){
+    margin-bottom: 3rem;
+}
+/*
+.hero-explanation{
+    opacity: 0.8;
+}
+.hero-button{
+    position: relative;
+    text-decoration: none;
+    color: #fff;
+    display: inline-block;
+    font-size: 2rem;
+    padding: 1.4rem 6.2rem;
+    border: 0.1rem rgba(255, 255, 255, 0.4) solid;
+    transition: all 0.4s;
+}
+.hero-button:visited .hero-button:active{
+    color: #fff;
+}
+.hero-button:hover{
+    background-color: rgba(255, 255, 255, 0.4);
+    border: 0.1rem rgba(255, 255, 255, 1) solid;
+}
+.hero-button::before,
+.hero-button::after{
+    content: "";
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    text-align: center;
+    border: 2px solid transparent;
+    width: 0;
+    height: 0;
+    box-sizing: content-box;
+}
+.hero-button:hover::before,
+.hero-button:hover::after{
+    width: 100%;
+    height: 100%;
+}
+.hero-button:hover::before{
+    border-top-color: aqua;
+    border-left-color: aqua;
+    transition: height 0.3s, width 0.3s 0.3s;
+}
+.hero-button:hover::after{
+    border-bottom-color: aqua;
+    border-right-color: aqua;
+    transition: width 0.3s, height 0.3s 0.3s;
+}
+*/
+
+.info{
+    margin-top: 10rem;
+    display: flex;
+    flex-wrap: wrap;
+}
+.img-area{
+    flex: 1;
+}
+.slide-show{
+    padding: 5rem 0;
+    width: 40rem;
+    margin: 0 auto;
+    font-size: 0;
+    position: relative;
+}
+.img-area img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.slide-show::before ,.slide-show::after{
+    content: '';
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    height: 0rem;
+    border: 3rem solid black;
+    border-bottom-color: transparent;
+    border-top-color: transparent;
+}
+.slide-show::before{
+    left: -8rem;
+    opacity: 1;
+    border-left-color: transparent;
+    animation: moveLeft 1.2s  infinite linear;
+}
+@keyframes moveLeft{
+    0%{
+        left: -4rem;
+        opacity: 1;
+    }
+    100%{
+        left: -10rem;
+        opacity: 0;
+    }
+}
+.slide-show::after{
+    border-right-color: transparent;
+    animation: moveRight 1.2s infinite linear ;
+}
+@keyframes moveRight{
+    0%{
+        right: -4rem;
+        opacity: 1;
+    }
+    100%{
+        right: -10rem;
+        opacity: 0;
+    }
+}
+.button-area{
+    position: relative;
+    flex: 1;
+}
+.info ul{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    list-style: none;
+    padding: 0 20rem;
+}
+.info ul li{
+    display: inline-block;
+    font-size: 2.6rem;
+    margin-top: 1.5rem;
+    padding: 1rem 4.4rem;
+    border: 1px solid rgb(0, 0, 0);
+    position: relative;
+}
+
+
+
+.intro{
+    font-size: 3rem;
+    margin: 20rem 20rem 20rem;
+    padding: 5rem;
+    background-color: white;
+    position: relative;
+}
+.intro::before, 
+.intro::after{
+    width: calc(100% - 40px);
+    height: 0;
+    display: block;
+    position: absolute;
+    right: 0;
+    content: "";
+}
+.intro::before{
+    border-bottom: solid 40px #fff;
+    border-left: solid 40px transparent;
+    bottom: 100%;
+}
+.intro::after{
+    border-top: solid 40px #fff;
+    border-right: solid 40px transparent;
+    top: 100%;
+}
+
+
+.cards{
+    padding: 5rem 10rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: auto;
+}
+
+.card{
+    height: var(--card-height);
+    width: var(--card-width);
+    font-size: 2.6rem;
+    background-color: #fff;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+    margin: 0 auto 5rem;
+    overflow: hidden;
+    position: relative;
+}
+/*
+.card:nth-child(3n-2){
+    top: 10rem;
+}
+.card:nth-child(3n-1){
+    top: 5rem;
+}
+*/
+
+.card-image-area{
+    height: calc(2/3 * var(--card-height));
+    position: relative;
+    transition: all 0.4s;
+}
+.card-image{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    position: relative;
+}
+.card-image-area::after{
+    content: "";
+    opacity: 0;
+    background-color:rgb(46, 42, 0);
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: all 0.4s;
+}
+.tag{
+    z-index: 50;
+    font-size: 1.6rem;
+    width: 8rem;
+    padding: 1rem 1.5rem;
+    background-color: rgb(240, 61, 61);
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    color: white;
+}
+.card-detail{
+    padding-left: 2.5rem;
+}
+.detail-title{
+    padding: 1rem 0;
+}
+.card ul{
+    display: flex;
+    font-size: 0;
+}
+.card ul li{
+    padding-right: 0.8rem;
+    list-style: none;
+    font-size: 1.3rem;
+}
+.detail-time{
+    display: flex;
+    font-size: 1.8rem;
+    padding-top: 2.5rem;
+    color: brown;
+}
+.card-description{ 
+    overflow: hidden;
+    transition: all 0.6s;
+    padding: 2.5rem 2.5rem 1rem;
+    opacity: 0;
+    position: relative;
+    top: -100;
+    font-size: 2rem;
+}
+
+.card:hover .card-description{
+    opacity: 1;
+    top: 100;
+}
+.card:hover .card-image-area{
+    height: 10rem;
+}
+.card:hover .card-image-area::after{
+    opacity: 0.5;
+}
+
+.mask{
+    z-index: 999;
+    background-color: rgba(0, 0, 0, 0.6);
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    opacity: 1;
+    visibility: visible;
+    transition: all 0.4s;
+}
+.mask-close{
+    opacity: 0;
+    visibility: hidden;
+}
+
+.testCard{
+    border-radius: 8rem;
+    max-height: calc(100vh - 40px);
+    max-width: min(100vw - 40px, 1280px);
+    min-width: 500px;
+    margin: 20px auto;
+    z-index: 1000;
+    padding:4rem;
+    overflow-y: hidden;
+    background-color: rgb(255, 255, 255);
+    box-sizing: border-box;
+}
+.testCard-text{
+    background-color: white;
+    border: 1rem solid green;
+    padding: 3rem 2rem;
+    height: 100%;
+    border-radius: 8rem;
+    width: 100%;
+    box-sizing: border-box;
+}
+.testCard-text h2{
+    font-size: 5rem;
+}
+.testCard-text ul{
+    padding: 1.5rem 0;
+    font-size: 2.5rem;
+    display: flex;
+}
+.testCard-text li{
+    padding-right: 3.5rem;
+    list-style: none;
+}
+.temp{
+    padding: 2rem;
+    overflow-y: scroll;
+    height: 100%;
+    box-sizing: border-box;
+}
+
+.testMember{
+    padding:5rem 0;
+}
+.testDescription{
+    font-size: 2rem;
+}
+.memberName{
+    display: inline-block;
+    font-size: 2.5rem;
+}
+.memberName::before{
+    content: "";
+    background-color: green;
+    width: 0.6rem;
+    height: 2.5rem;
+    margin-right: 0.5rem;
+    border-radius: 3rem;
+    display:inline-block;
+}
+/* for Smart Phone */
+@media (max-width: 767px) {
+    html{
+        font-size: 8px;
+    }
+    .header ul{
+        position: absolute;
+        top: 0;
+        right: 0;
+        display: flex;
+        flex-direction: column;
+    }
+    .menu-bar{
+        display: inline-block !important;
+    }
+}
+/* for mini tablet */
+@media(max-width: 1020px){
+    html{
+        font-size: 8px;
+    }
+    .ul-mask{
+        position: fixed;
+        background: rgb(114, 114, 114);
+        height: 100vh;
+        width: 100vw;
+    }
+    
+    .ul-list{
+        display: none;
+        padding-top: 10rem;
+        background-color: orange;
+        height: 100vh;
+        position: absolute;
+        top: 0;
+        right: -200px;
+        width: 200px;
+        z-index: 1000;
+        transition: all 0.4s;
+    }
+    .ul-listOpen{
+        right: 0px !important;
+    }
+    .header ul{
+        display: flex;
+        flex-direction: column;
+    }
+    .menu-bar{
+        display: inline-block !important;
+    }
+}
+
