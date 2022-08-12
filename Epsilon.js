@@ -20,19 +20,28 @@ window.addEventListener("scroll", () =>{
 })
 
 const bar = document.querySelector(".menu-bar");
-const ulList = document.querySelector(".ul");
+const ulList = document.querySelector(".ul-list");
 const ulMask = document.querySelector(".ul-mask");
+const menuBar = document.querySelector(".menu-bar");
+
+function removeClass(){
+    ulList.classList.remove("ul-list_active");
+    ulMask.classList.remove("ul-mask_active");
+    menuBar.classList.remove("menu-bar_active");
+}
+function addClass(){
+    ulList.classList.add("ul-list_active");
+    ulMask.classList.add("ul-mask_active");
+    menuBar.classList.add("menu-bar_active");
+}
 
 bar.addEventListener("click", () => {
-    if(ulList.classList.contains("ul-listOpen")){
-        ulList.classList.remove("ul_active");
-        ulMask.classList.remove("ul-mask_active");
+    if(ulList.classList.contains("ul-list_active")){
+        removeClass();
     }else{
-        ulList.classList.add("ul_active");
-        ulMask.classList.add("ul-mask_active");
+        addClass();
     }
 })
 ulMask.addEventListener("click", () => {
-    ulList.classList.remove("ul_active");
-    ulMask.classList.remove("ul-mask_active");
+    removeClass();
 })

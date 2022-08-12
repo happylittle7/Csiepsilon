@@ -11,8 +11,9 @@
     50  :    tag
     90  :    hero-text    
     100 :    header
-    999 :    mask
-    1000:    text-card
+    200 :    ul-mask
+    201 :    ul(on phone)
+    202 :    fabicon
 */
 
 
@@ -27,9 +28,6 @@ html{
 body{
     box-sizing: border-box;
     background-color: rgb(70, 94, 121);
-}
-ul{
-    font-size: 0;
 }
 .i{
     display: inline-block;
@@ -88,7 +86,6 @@ ul{
 }
 .header ul li{
     display: inline-block;
-    font-weight: 0;
     font-size: 2rem;
     padding: 2rem 3.5rem;
     margin: 0 1rem;
@@ -114,9 +111,12 @@ ul{
     text-decoration: none;
 }
 .menu-bar{
+    z-index: 202;
     display: none !important;
 }
-
+.ul-list{
+    display: none;
+}
 /* hero */
 .hero{
     display: inline-block;
@@ -510,12 +510,12 @@ ul{
 /* for Smart Phone */
 @media (max-width: 767px) {
     html{
-        font-size: 26px;
+        font-size: 8px;
     }
     .ul-mask{
         opacity: 0;
         visibility: hidden;
-        z-index: 101;
+        z-index: 200;
         position: fixed;
         background: rgba(0, 0, 0, 0.6);
         height: 100%;
@@ -527,36 +527,69 @@ ul{
         visibility: visible;
     }
     
-    .header ul{
+    .ul-list{
+        color: #fff;
         background-color: orange;
+        display: block;
         height: 100vh;
         width: 550px;
-        position: absolute;
+        position: fixed;
         top: 0;
         right: -550px;
-        z-index: 1000;
         text-align: left;
         transition: all 0.4s;
         flex-direction: column;
         padding-top: 100px;
+        z-index: 201;
     }
-    .ul_active{
-        right: 550px;
+    .ul-list_active{
+        right: 0 !important;
     }
-    .header ul li{
+    .ul-list li{
+        font-size: 2rem;
+        padding: 2rem 3.5rem;
+        margin: 0 1rem;
+        transition: all 0.5s;
+        cursor: pointer;
+        position: relative;
         display: block;
         padding: 45px 40px;
     }
-    .menu-bar{
+    .ul-list li::after{
         position: absolute;
-        top: 50%;
-        transform:  translateY(-50%);
-        z-index: 1000;
-        font-size: 2.6rem;
+        top: 75%;
+        left: 0;
+        content: "";
+        width: 0px;
+        height: 0.2rem;
+        background-color: white;
+        transition: all 0.4s;
+    }
+    .ul-list li:hover::after{
+        width: 100%;
+    }
+    .ul-list li a,.header ul li a:visited{
+        color: white;
+        text-decoration: none;
+    }
+
+    .menu-bar{
+        position: fixed;
+        top: calc(26px * 1.75);
+        font-size: 2.5rem;
         color: white;
         right: 0;
         padding-right: 4rem;
         display: inline-block !important;
+        transition: all 0.5s;
+    }
+    .menu-bar_active{
+    }
+
+
+    
+    .header ul{
+        display: none;
     }
 }
 /* for mini tablet */
@@ -567,7 +600,7 @@ ul{
     .ul-mask{
         opacity: 0;
         visibility: hidden;
-        z-index: 101;
+        z-index: 200;
         position: fixed;
         background: rgba(0, 0, 0, 0.6);
         height: 100%;
@@ -579,36 +612,69 @@ ul{
         visibility: visible;
     }
     
-    .header ul{
+    .ul-list{
+        color: #fff;
         background-color: orange;
+        display: block;
         height: 100vh;
         width: 550px;
-        position: absolute;
+        position: fixed;
         top: 0;
         right: -550px;
-        z-index: 1000;
         text-align: left;
         transition: all 0.4s;
         flex-direction: column;
         padding-top: 100px;
+        z-index: 201;
     }
-    .ul_active{
-        right: 550px;
+    .ul-list_active{
+        right: 0 !important;
     }
-    .header ul li{
+    .ul-list li{
+        font-size: 2rem;
+        padding: 2rem 3.5rem;
+        margin: 0 1rem;
+        transition: all 0.5s;
+        cursor: pointer;
+        position: relative;
         display: block;
         padding: 45px 40px;
     }
-    .menu-bar{
+    .ul-list li::after{
         position: absolute;
-        top: 50%;
-        transform:  translateY(-50%);
-        z-index: 1000;
-        font-size: 2.6rem;
+        top: 75%;
+        left: 0;
+        content: "";
+        width: 0px;
+        height: 0.2rem;
+        background-color: white;
+        transition: all 0.4s;
+    }
+    .ul-list li:hover::after{
+        width: 100%;
+    }
+    .ul-list li a,.header ul li a:visited{
+        color: white;
+        text-decoration: none;
+    }
+
+    .menu-bar{
+        position: fixed;
+        top: calc(26px * 1.75);
+        font-size: 2.5rem;
         color: white;
         right: 0;
         padding-right: 4rem;
         display: inline-block !important;
+        transition: all 0.5s;
+    }
+    .menu-bar_active{
+    }
+
+
+    
+    .header ul{
+        display: none;
     }
 }
 
