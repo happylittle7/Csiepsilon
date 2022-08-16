@@ -10,6 +10,26 @@ mask.addEventListener( "click", () => {
     mask.classList.add("mask-close");
 })
 */
+var TypingBarBlink = setInterval( ()=>{
+    const TypingBar = document.querySelector(".intro-title").querySelector("span");
+    if(TypingBar.style.visibility == "visible"){
+        TypingBar.style.visibility = "hidden";
+    }else{
+        TypingBar.style.visibility = "visible";
+    }
+}, 1000)
+
+function TypingAnimaton(){
+    let titleText = ["About us"], totalText;  
+    const title = document.querySelector(".intro-title").querySelector("h2");
+    for(let i = 1; i < titleText[0].length+1; i++){
+        setTimeout( ()=>{
+            totalText = titleText[0].slice(0, i);
+            title.innerHTML = totalText;
+        }, 100*i);
+    }
+}
+
 window.addEventListener("scroll", () =>{
     let scrolly = window.scrollY;
     const header = document.querySelector(".header");
@@ -18,8 +38,8 @@ window.addEventListener("scroll", () =>{
     }else{
         header.classList.remove("headerScroll");
     }
-    
-    if(scrolly == 100){
+    console.log(scrolly);
+    if(scrolly == 657){
         TypingAnimaton();
     }
 })
