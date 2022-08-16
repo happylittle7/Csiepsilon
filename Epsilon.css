@@ -18,6 +18,7 @@
 
 
 *{
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
@@ -26,13 +27,25 @@ html{
 }
 
 body{
-    box-sizing: border-box;
     background-color: rgb(70, 94, 121);
 }
 .i{
     display: inline-block;
 }
 
+.tempButton{
+    height: 200px;
+    width: 400px;
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    color: white;
+    z-index: 2000;
+}
+.tempButton a{
+    padding: 2px 5px;
+    background-color: gray;
+}
 
 /* bg video */
 .video-area{
@@ -53,7 +66,7 @@ body{
     object-fit: cover;
 }
 
-.bgimg-area{
+.bg-area{
     z-index: -10;
     position: relative;
     top: 0;
@@ -61,13 +74,12 @@ body{
     width: 100%;
     height: 100%;
 }
-.bgimg-area img{
+.bg-area img{
     z-index: -9;
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
-    height: 100%;
     object-fit: cover;
 }
 
@@ -76,7 +88,7 @@ body{
 .header{
     min-height: 6rem;
     z-index: 100;
-    position: sticky;
+    position: fixed;
     right: 0;
     top: 0;
     width: 100%;
@@ -86,7 +98,6 @@ body{
     justify-content: left;
     align-items: center;
     transition: all 0.6s;
-    padding-right: 20px;
 }
 .headerScroll{
     background-color: rgba(48, 39, 68, 1);
@@ -135,7 +146,36 @@ body{
 .ul-list{
     display: none;
 }
+
+.hero{
+    height: 100vh;
+    width: 100%;
+    padding: 100px 40px 0;
+    display: flex;
+    vertical-align: middle;
+    justify-content: center;
+}
+.hero-content{
+    color: #fff;
+    text-align: center;
+}
+.hero-content img{
+    height: 380px;
+    width: 380px;
+    object-fit: cover;
+    padding: 30px;
+}
+.hero-content h1{
+    font-size: 38px;
+    padding-bottom: 8px;
+}
+.hero-content h2{
+    font-size: 28px;
+}
+
+
 /* hero */
+/*
 .hero{
     display: inline-block;
     width: 48%;
@@ -157,7 +197,8 @@ body{
         width: 48%;
     }
 }
-/* texts on the video */
+*/
+/* texts on the video 
 .hero-text{
     display: inline-block;
     position: relative;
@@ -176,6 +217,7 @@ body{
         opacity: 1;
     }
 }
+
 .hero-text h1{
     margin-top: 0.2rem;
     margin-bottom: 0.4rem;
@@ -187,6 +229,8 @@ body{
 .hero-text h2:nth-child(2){
     margin-bottom: 3rem;
 }
+*/
+
 /*
 .hero-explanation{
     opacity: 0.8;
@@ -236,7 +280,7 @@ body{
     transition: width 0.3s, height 0.3s 0.3s;
 }
 */
-
+/*
 .info{
     width: 100%;
     margin-top: 10rem;
@@ -317,15 +361,20 @@ body{
     position: relative;
 }
 
-
+*/
 
 .intro{
-    font-size: 3rem;
-    margin: 20rem 20rem 20rem;
-    padding: 5rem;
-    background-color: white;
+    height: 100vh;
+    width: 100%;
+    padding: 100px 130px;
+    color: #fff;
     position: relative;
 }
+.intro-title{
+    text-align: left;
+    font-size: 42px;
+}
+/*
 .intro::before, 
 .intro::after{
     width: calc(100% - 40px);
@@ -344,6 +393,11 @@ body{
     border-top: solid 40px #fff;
     border-right: solid 40px transparent;
     top: 100%;
+}
+*/
+
+.intro-content{
+    background-color: white;
 }
 
 
@@ -611,7 +665,7 @@ body{
     }
 }
 /* for mini tablet */
-@media(max-width: 1020px){
+@media(max-width: 1000px){
     html{
         font-size: 26px;
     }
@@ -623,7 +677,7 @@ body{
         background: rgba(0, 0, 0, 0.6);
         height: 100%;
         width: 100%;
-        transition: all 0.4s;
+        transition: all 0.3s;
     }
     .ul-mask_active{
         opacity: 1;
@@ -666,7 +720,7 @@ body{
         width: 0px;
         height: 0.2rem;
         background-color: white;
-        transition: all 0.4s;
+        transition: all 0.3s;
     }
     .ul-list li:hover::after{
         width: 100%;
@@ -684,7 +738,7 @@ body{
         right: 0;
         padding-right: 4rem;
         display: inline-block !important;
-        transition: all 0.5s;
+        transition: all 0.3s;
     }
     .menu-bar_active{
     }

@@ -1,3 +1,4 @@
+/*
 const mask = document.getElementsByClassName("mask")[0];
 const trig = document.querySelector(".card");
 trig.addEventListener("click", ()=>{
@@ -8,7 +9,7 @@ trig.addEventListener("click", ()=>{
 mask.addEventListener( "click", () => {
     mask.classList.add("mask-close");
 })
-
+*/
 window.addEventListener("scroll", () =>{
     let scrolly = window.scrollY;
     const header = document.querySelector(".header");
@@ -16,6 +17,10 @@ window.addEventListener("scroll", () =>{
         header.classList.add("headerScroll");
     }else{
         header.classList.remove("headerScroll");
+    }
+    
+    if(scrolly == 100){
+        TypingAnimaton();
     }
 })
 
