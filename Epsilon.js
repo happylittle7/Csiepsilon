@@ -29,7 +29,9 @@ function TypingAnimaton(){
         }, 100*i);
     }
 }
-
+var primaryY = 0;
+var event1 = false;
+const button = document.querySelector(".tempButton").querySelectorAll("a")[1];
 window.addEventListener("scroll", () =>{
     let scrolly = window.scrollY;
     const header = document.querySelector(".header");
@@ -39,9 +41,12 @@ window.addEventListener("scroll", () =>{
         header.classList.remove("headerScroll");
     }
     console.log(scrolly);
-    if(scrolly == 657){
+    if(scrolly > 657 && !event1){
         TypingAnimaton();
+        event1 = true;
     }
+    
+    primaryY = scrolly;
 })
 
 const bar = document.querySelector(".menu-bar");
