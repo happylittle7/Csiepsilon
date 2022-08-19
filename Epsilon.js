@@ -26,23 +26,23 @@ function TypingAnimaton(){
         setTimeout( ()=>{
             totalText = titleText[0].slice(0, i);
             title.innerHTML = totalText;
-        }, 100*i);
+        }, 100*i + 700);
     }
 }
-var primaryY = 0;
-var event1 = false;
-var eventCoordinate = [];
+var eventCoordinate = [], eventFlag = [];
 const eventPoints = document.querySelectorAll(".checkPoint");
 const eventNum = eventPoints.length;
 for(let i = 0; i < eventNum; i++){
     let elem = eventPoints[i];
     let rect = elem.getBoundingClientRect();
     eventCoordinate.push(rect.top + window.pageYOffset);
+    eventFlag.push(false);
 }
 
 const button = document.querySelector(".tempButton").querySelectorAll("a")[1];
-window.addEventListener("scroll", () =>{
-    let scrolly = window.scrollY;
+const parent = document.querySelector(".container");
+parent.addEventListener("scroll", () =>{
+    let scrolly = parent.scrollTop;
     const header = document.querySelector(".header");
     if(scrolly != 0){
         header.classList.add("headerScroll");
@@ -50,12 +50,10 @@ window.addEventListener("scroll", () =>{
         header.classList.remove("headerScroll");
     }
     console.log(scrolly);
-    if(scrolly > eventCoordinate[0] && !event1){
+    if(scrolly > eventCoordinate[0] && !eventFlag[0]){
         TypingAnimaton();
-        event1 = true;
+        eventFlag[0] = true;
     }
-    
-    primaryY = scrolly;
 })
 
 const bar = document.querySelector(".menu-bar");

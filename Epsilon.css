@@ -3,7 +3,7 @@
     /* happy    : 50 40 */
     --card-height:  40rem;
     --card-width:   35rem;
-    
+    --main-intro-color: #fff;
 }
 
 /*      z-index 
@@ -18,6 +18,7 @@
 
 
 *{
+    font-family: 'Noto Serif TC', serif;
     box-sizing: border-box;
     margin: 0;
     padding: 0;
@@ -32,6 +33,9 @@ body{
 }
 .i{
     display: inline-block;
+}
+a, a:visited{
+    text-decoration: none;
 }
 
 .tempButton{
@@ -82,7 +86,6 @@ body{
     top: 0;
     left: 0;
     width: 100%;
-    height: 100%;
     object-fit: cover;
 }
 
@@ -106,9 +109,11 @@ body{
     background-color: rgba(48, 39, 68, 1);
 }
 .header-title{
-    vertical-align: center;
     margin-left: 4.8rem;
     font-size: 2.3rem;
+}
+.header-title a{
+    color: #fff;
 }
 /* from here is PC mode */
 .header ul{
@@ -117,33 +122,6 @@ body{
     vertical-align: middle;
     list-style: none;
 }
-.header ul li{
-    display: inline-block;
-    font-size: 2rem;
-    padding: 2rem 3.5rem;
-    margin: 0 1rem;
-    transition: all 0.5s;
-    cursor: pointer;
-    position: relative;
-}
-.header ul li::after{
-    position: absolute;
-    top: 75%;
-    left: 0;
-    content: "";
-    width: 0px;
-    height: 0.2rem;
-    background-color: white;
-    transition: all 0.4s;
-}
-.header ul li:hover::after{
-    width: 100%;
-}
-.header ul li a,.header ul li a:visited{
-    color: white;
-    text-decoration: none;
-}
-
 /* menu-bar */
 .menu-bar{
     position: fixed;
@@ -213,8 +191,8 @@ body{
 }
 .ul-list li a,.header ul li a:visited{
     color: white;
-    text-decoration: none;
 }
+
 .hero{
     width: 100%;
     padding: 68px 14px 36px;
@@ -434,11 +412,14 @@ body{
 */
 
 .intro{
-    background-color: rgb(70, 94, 121);
+    width: 100%;
+    color: #fff;
+}
+.intro-bg{
+    background-color: var(--intro-bg-color);
+    height: 100%;
     width: 100%;
     padding: 40px 44px 40px;
-    color: #fff;
-    position: relative;
 }
 .intro-title{
     font-size: 2.08rem;
@@ -460,27 +441,6 @@ body{
     visibility: visible;
     transform: translateY(-50%);
 }
-/*
-.intro::before, 
-.intro::after{
-    width: calc(100% - 40px);
-    height: 0;
-    display: block;
-    position: absolute;
-    right: 0;
-    content: "";
-}
-.intro::before{
-    border-bottom: solid 40px #fff;
-    border-left: solid 40px transparent;
-    bottom: 100%;
-}
-.intro::after{
-    border-top: solid 40px #fff;
-    border-right: solid 40px transparent;
-    top: 100%;
-}
-*/
 
 .intro-content{
     padding: 9.2px 0;
@@ -681,13 +641,97 @@ body{
         height: 72px;
     }
     .header-title{
-        margin-left: 10rem;
+        margin-left: 8vw;
     }
     .header ul{
         display: inline-block;
+        position: absolute;
+        right: 0;
+        padding-right: 8vw;
     }
     .header ul li{
-        font-size: 2rem;
+        display: inline-block;
+        font-size: 1.6rem;
+        padding: 1rem 1.5rem;
+        margin: 0 1rem;
+        transition: all 0.5s;
+        cursor: pointer;
+        position: relative;
     }
+    .header ul li::after{
+        position: absolute;
+        top: 75%;
+        left: 0;
+        content: "";
+        width: 0px;
+        height: 0.2rem;
+        background-color: white;
+        transition: all 0.4s;
+    }
+    .header ul li:hover::after{
+        width: 100%;
+    }
+    .header ul li a,.header ul li a:visited{
+        color: white;
+    }
+    .menu-bar{
+        display: none !important;
+    }
+
+
+    .container{
+        scroll-snap-type: y mandatory;
+        overflow: auto;
+        height: calc(100vh - 72px);
+    }
+    .container::-webkit-scrollbar{
+        width: 0;
+    }
+    .checkPoint{
+        scroll-snap-align: start;
+        height: calc(100vh - 72px);
+    }
+    .hero{
+        height: calc(100vh - 72px);
+    }
+    .hero-content h1{
+        font-size: 2.2rem;
+    }
+    .hero-content h2{
+        font-size: 1.9rem;
+    }
+    .intro{
+        height: calc(100vh - 72px);
+        padding: 6rem 7.2rem;
+        margin: 0 auto;
+    }
+    .intro-bg{
+        padding-top: 0;
+        position: relative;
+    }
+    .intro-bg::before, 
+    .intro-bg::after{
+        width: calc(100% - 40px);
+        height: 0;
+        display: block;
+        position: absolute;
+        right: 0;
+        content: "";
+    }
+    .intro-bg::before{
+        border-bottom: solid 40px var(--intro-bg-color);
+        border-left: solid 40px transparent;
+        bottom: 100%;
+    }
+    .intro-bg::after{
+        border-top: solid 40px var(--intro-bg-color);
+        border-right: solid 40px transparent;
+        top: 100%;
+    }
+    .intro-title{
+        font-size: 2.4rem;
+    }
+/* testing-bg rgb(70, 94, 121) */
+    
 }
 
