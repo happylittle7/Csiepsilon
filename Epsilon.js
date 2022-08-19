@@ -31,6 +31,15 @@ function TypingAnimaton(){
 }
 var primaryY = 0;
 var event1 = false;
+var eventCoordinate = [];
+const eventPoints = document.querySelectorAll(".checkPoint");
+const eventNum = eventPoints.length;
+for(let i = 0; i < eventNum; i++){
+    let elem = eventPoints[i];
+    let rect = elem.getBoundingClientRect();
+    eventCoordinate.push(rect.top + window.pageYOffset);
+}
+
 const button = document.querySelector(".tempButton").querySelectorAll("a")[1];
 window.addEventListener("scroll", () =>{
     let scrolly = window.scrollY;
@@ -41,7 +50,7 @@ window.addEventListener("scroll", () =>{
         header.classList.remove("headerScroll");
     }
     console.log(scrolly);
-    if(scrolly > 657 && !event1){
+    if(scrolly > eventCoordinate[0] && !event1){
         TypingAnimaton();
         event1 = true;
     }

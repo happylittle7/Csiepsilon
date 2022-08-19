@@ -24,7 +24,7 @@
 }
 html{
     scroll-behavior: smooth;
-    font-size: 26px;
+    font-size: 10px;
 }
 
 body{
@@ -35,13 +35,14 @@ body{
 }
 
 .tempButton{
-    height: 200px;
-    width: 400px;
+    height: 100px;
+    width: 100px;
     position: fixed;
     top: 20px;
     left: 20px;
     color: white;
     z-index: 2000;
+    font-size: 10px;
 }
 .tempButton a{
     padding: 2px 5px;
@@ -88,7 +89,7 @@ body{
 
 /* header lists */
 .header{
-    height: 160px;
+    height: 5.52rem;
     z-index: 100;
     position: sticky;
     right: 0;
@@ -106,11 +107,12 @@ body{
 }
 .header-title{
     vertical-align: center;
-    font-size: 3rem;
-    margin-left: 140px;
-    margin-right: 100px;
+    margin-left: 4.8rem;
+    font-size: 2.3rem;
 }
+/* from here is PC mode */
 .header ul{
+    display: none;
     font-size: 0;
     vertical-align: middle;
     list-style: none;
@@ -141,17 +143,81 @@ body{
     color: white;
     text-decoration: none;
 }
+
+/* menu-bar */
 .menu-bar{
+    position: fixed;
+    top: calc(5.6rem * 0.5);
+    transform: translateY(-50%);
+    font-size: 2.4rem;
+    color: white;
+    right: 0;
+    padding-right: 2rem;
+    display: inline-block;
+    transition: all 0.5s;
     z-index: 202;
-    display: none !important;
+}
+.ul-mask{
+    opacity: 0;
+    visibility: hidden;
+    z-index: 200;
+    position: fixed;
+    background: rgba(0, 0, 0, 0.6);
+    height: 100%;
+    width: 100%;
+    transition: all 0.4s;
+}
+.ul-mask_active{
+    opacity: 1;
+    visibility: visible;
 }
 .ul-list{
-    display: none;
+    color: #fff;
+    background-color: orange;
+    display: block;
+    height: 100vh;
+    width: 60vw ;
+    position: fixed;
+    top: 0;
+    right: -60vw;
+    text-align: left;
+    transition: all 0.4s;
+    flex-direction: column;
+    padding-top: 72px;
+    z-index: 201;
 }
-
+.ul-list_active{
+    right: 0;
+}
+.ul-list li{
+    font-size: 2.2rem;
+    padding: 10px 0;
+    margin: 0 1rem;
+    transition: all 0.5s;
+    cursor: pointer;
+    position: relative;
+    display: block;
+}
+.ul-list li::after{
+    position: absolute;
+    top: 75%;
+    left: 0;
+    content: "";
+    width: 0px;
+    height: 0.2rem;
+    background-color: white;
+    transition: all 0.4s;
+}
+.ul-list li:hover::after{
+    width: 100%;
+}
+.ul-list li a,.header ul li a:visited{
+    color: white;
+    text-decoration: none;
+}
 .hero{
     width: 100%;
-    padding: 220px 40px 120px;
+    padding: 68px 14px 36px;
     position: relative;
     display: flex;
     vertical-align: middle;
@@ -164,25 +230,17 @@ body{
 
 
 .hero-content img{
-    height: 600px;
-    width: 600px;
+    height: 19.4rem;
+    width: 19.4rem;
     object-fit: cover;
+    transition: all 0.4s;
 }
-/*PC
-.hero-content img{
-    height: 380px;
-    width: 380px;
-    object-fit: cover;
-    padding: 30px;
-}
-*/
 .hero-content h1{
-    font-size: 54px;
-    padding-top: 102px;
-    padding-bottom: 12px;
+    font-size: 1.8rem;
+    padding: 32px 0 2px;
 }
 .hero-content h2{
-    font-size: 48px;
+    font-size: 1.64rem;
 }
 
 
@@ -376,15 +434,14 @@ body{
 */
 
 .intro{
-    height: 100vh;
+    background-color: rgb(70, 94, 121);
     width: 100%;
-    padding: 130px 130px 0;
+    padding: 40px 44px 40px;
     color: #fff;
-    background-color: rgb(65, 77, 104);
     position: relative;
 }
 .intro-title{
-    font-size: 62px;
+    font-size: 2.08rem;
     display: inline-block;
     position: relative;
     vertical-align: middle;
@@ -426,8 +483,8 @@ body{
 */
 
 .intro-content{
-    padding: 20px 0;
-    font-size: 48px;
+    padding: 9.2px 0;
+    font-size: 1.64rem;
 }
 
 
@@ -610,179 +667,27 @@ body{
     display:inline-block;
 }
 /* for Smart Phone */
-@media (min-width: 520px) {
+@media screen and (min-width: 520px){
     html{
-        font-size: 8px;
-    }
-    .ul-mask{
-        opacity: 0;
-        visibility: hidden;
-        z-index: 200;
-        position: fixed;
-        background: rgba(0, 0, 0, 0.6);
-        height: 100%;
-        width: 100%;
-        transition: all 0.4s;
-    }
-    .ul-mask_active{
-        opacity: 1;
-        visibility: visible;
-    }
-    
-    .ul-list{
-        color: #fff;
-        background-color: orange;
-        display: block;
-        height: 100vh;
-        width: 550px;
-        position: fixed;
-        top: 0;
-        right: -550px;
-        text-align: left;
-        transition: all 0.4s;
-        flex-direction: column;
-        padding-top: 100px;
-        z-index: 201;
-    }
-    .ul-list_active{
-        right: 0 !important;
-    }
-    .ul-list li{
-        font-size: 2rem;
-        padding: 2rem 3.5rem;
-        margin: 0 1rem;
-        transition: all 0.5s;
-        cursor: pointer;
-        position: relative;
-        display: block;
-        padding: 45px 40px;
-    }
-    .ul-list li::after{
-        position: absolute;
-        top: 75%;
-        left: 0;
-        content: "";
-        width: 0px;
-        height: 0.2rem;
-        background-color: white;
-        transition: all 0.4s;
-    }
-    .ul-list li:hover::after{
-        width: 100%;
-    }
-    .ul-list li a,.header ul li a:visited{
-        color: white;
-        text-decoration: none;
-    }
-
-    .menu-bar{
-        position: fixed;
-        top: calc(26px * 1.75);
-        font-size: 2.5rem;
-        color: white;
-        right: 0;
-        padding-right: 20px;
-        display: inline-block !important;
-        transition: all 0.5s;
-    }
-    .menu-bar_active{
-    }
-
-
-    
-    .header ul{
-        display: none;
-    }
-    .intro{
-        background: #000;
+        font-size: 12px;
     }
 }
 /* for mini tablet */
-@media(min-width: 960px){
+@media screen and (min-width: 960px){
     html{
-        font-size: 26px;
+        font-size: 13.6px;
     }
-    .ul-mask{
-        opacity: 0;
-        visibility: hidden;
-        z-index: 200;
-        position: fixed;
-        background: rgba(0, 0, 0, 0.6);
-        height: 100%;
-        width: 100%;
-        transition: all 0.3s;
+    .header{
+        height: 72px;
     }
-    .ul-mask_active{
-        opacity: 1;
-        visibility: visible;
+    .header-title{
+        margin-left: 10rem;
     }
-    
-    .ul-list{
-        color: #fff;
-        background-color: orange;
-        display: block;
-        height: 100vh;
-        width: 550px;
-        position: fixed;
-        top: 0;
-        right: -550px;
-        text-align: left;
-        transition: all 0.4s;
-        flex-direction: column;
-        padding-top: 100px;
-        z-index: 201;
-    }
-    .ul-list_active{
-        right: 0 !important;
-    }
-    .ul-list li{
-        font-size: 2rem;
-        padding: 2rem 3.5rem;
-        margin: 0 1rem;
-        transition: all 0.5s;
-        cursor: pointer;
-        position: relative;
-        display: block;
-        padding: 45px 40px;
-    }
-    .ul-list li::after{
-        position: absolute;
-        top: 75%;
-        left: 0;
-        content: "";
-        width: 0px;
-        height: 0.2rem;
-        background-color: white;
-        transition: all 0.3s;
-    }
-    .ul-list li:hover::after{
-        width: 100%;
-    }
-    .ul-list li a,.header ul li a:visited{
-        color: white;
-        text-decoration: none;
-    }
-
-    .menu-bar{
-        position: fixed;
-        top: calc(26px * 1.75);
-        font-size: 2.5rem;
-        color: white;
-        right: 0;
-        padding-right: 4rem;
-        display: inline-block !important;
-        transition: all 0.3s;
-    }
-    .menu-bar_active{
-    }
-
-
-    
     .header ul{
-        display: none;
+        display: inline-block;
     }
-    .intro{
-        background: #fff;
+    .header ul li{
+        font-size: 2rem;
     }
 }
 
