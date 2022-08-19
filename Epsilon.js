@@ -26,7 +26,7 @@ function TypingAnimaton(){
         setTimeout( ()=>{
             totalText = titleText[0].slice(0, i);
             title.innerHTML = totalText;
-        }, 100*i + 700);
+        }, 100*i + baffa);
     }
 }
 var eventCoordinate = [], eventFlag = [];
@@ -39,10 +39,23 @@ for(let i = 0; i < eventNum; i++){
     eventFlag.push(false);
 }
 
-const button = document.querySelector(".tempButton").querySelectorAll("a")[1];
-const parent = document.querySelector(".container");
+
+var parent, scrolly, baffa;
+if(window.matchMedia && window.matchMedia('(max-device-width: 960px)').matches){
+    parent = window;
+    baffa = 0;
+}else{
+    parent = document.querySelector(".container");   
+    baffa = 500;
+}
+
 parent.addEventListener("scroll", () =>{
-    let scrolly = parent.scrollTop;
+    if(window.matchMedia && window.matchMedia('(max-device-width: 960px)').matches){
+        scrolly = parent.scrollY;
+    }else{ 
+        scrolly = parent.scrollTop;
+    }
+    
     const header = document.querySelector(".header");
     if(scrolly != 0){
         header.classList.add("headerScroll");
@@ -56,6 +69,8 @@ parent.addEventListener("scroll", () =>{
     }
 })
 
+
+/*      side-bar      */
 const bar = document.querySelector(".menu-bar");
 const ulList = document.querySelector(".ul-list");
 const ulMask = document.querySelector(".ul-mask");
