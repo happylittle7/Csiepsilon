@@ -63,14 +63,6 @@ parent.addEventListener("scroll", () =>{
         scrolly = parent.scrollTop;
     }
 
-    /*      header transparent     */
-    const header = document.querySelector(".header");
-    if(eventHandler != 0){
-        header.classList.add("headerScroll");
-    }else{
-        header.classList.remove("headerScroll");
-    }
-
     /*      analyzing eventHandler     */
     switch(true){
         case scrolly <= eventCoordinate[0]:
@@ -83,6 +75,14 @@ parent.addEventListener("scroll", () =>{
                 eventFlag[1] = true;
             }
     }
+    /*      header transparent     */
+    const header = document.querySelector(".header");
+    if(eventHandler != 0){
+        header.classList.add("headerScroll");
+    }else{
+        header.classList.remove("headerScroll");
+    }
+
     console.log(scrolly, eventHandler);
 })
 
