@@ -19,27 +19,34 @@ var TypingBarBlink = setInterval( ()=>{
     }
 }, 1000)
 
-function TypingAnimaton(){
-    let titleText = ["About us"], totalText;  
-    const title = document.querySelector(".intro-title").querySelector("h2");
-    for(let i = 1; i < titleText[0].length+1; i++){
+function TypingAnimaton(TypingLocation){
+    let titleTexts = ["About us"], totalText, titleLocation = [".intro-title"],
+        titleTag = titleLocation[TypingLocation], titleText = titleTexts[TypingLocation];
+    const title = document.querySelector(titleTag).querySelector("h2");
+    for(let i = 1; i < titleText.length+1; i++){
         setTimeout( ()=>{
-            totalText = titleText[0].slice(0, i);
+            totalText = titleText.slice(0, i);
             title.innerHTML = totalText;
         }, 100*i + baffa);
     }
 }
-var eventCoordinate = [], eventFlag = [];
+
+/*      
+        calculating coordinate of each event 
+        and initializing each event flag
+ */
+var eventCoordinate = [], eventFlag = [], eventHandler;
 const eventPoints = document.querySelectorAll(".checkPoint");
 const eventNum = eventPoints.length;
+const headerHeight = document.querySelector(".container").getBoundingClientRect().top;
 for(let i = 0; i < eventNum; i++){
     let elem = eventPoints[i];
     let rect = elem.getBoundingClientRect();
-    eventCoordinate.push(rect.top + window.pageYOffset);
+    eventCoordinate.push(rect.top + window.pageYOffset - headerHeight);
     eventFlag.push(false);
 }
 
-
+/*      telling device      */
 var parent, scrolly, baffa;
 if(window.matchMedia && window.matchMedia('(max-device-width: 960px)').matches){
     parent = window;
@@ -55,18 +62,28 @@ parent.addEventListener("scroll", () =>{
     }else{ 
         scrolly = parent.scrollTop;
     }
-    
+
+    /*      header transparent     */
     const header = document.querySelector(".header");
-    if(scrolly != 0){
+    if(eventHandler != 0){
         header.classList.add("headerScroll");
     }else{
         header.classList.remove("headerScroll");
     }
-    console.log(scrolly);
-    if(scrolly > eventCoordinate[0] && !eventFlag[0]){
-        TypingAnimaton();
-        eventFlag[0] = true;
+
+    /*      analyzing eventHandler     */
+    switch(true){
+        case scrolly <= eventCoordinate[0]:
+            eventHandler = 0;
+            break;
+        default:
+            eventHandler = 1;
+            if(!eventFlag[1]){
+                TypingAnimaton(1 - 1);
+                eventFlag[1] = true;
+            }
     }
+    console.log(scrolly, eventHandler);
 })
 
 
