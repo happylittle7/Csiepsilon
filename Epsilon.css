@@ -427,6 +427,7 @@ a, a:visited{
     display: inline-block;
     position: relative;
     vertical-align: middle;
+    white-space: nowrap;
 }
 .intro-title h2{
     display: inline-block;
@@ -694,12 +695,14 @@ a, a:visited{
     }
     .hero{
         height: calc(100vh - 72px);
+        padding-top: 14vh;
     }
     .hero-content h1{
-        font-size: 2.2rem;
+        font-size: 2.4rem;
+        padding-top: 4vh;
     }
     .hero-content h2{
-        font-size: 1.9rem;
+        font-size: 1.8rem;
     }
     .intro{
         height: calc(100vh - 72px);
