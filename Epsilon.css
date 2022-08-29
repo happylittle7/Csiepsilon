@@ -198,22 +198,20 @@ a, a:visited{
     width: 100%;
     padding: 68px 14px 36px;
     position: relative;
-    display: flex;
     vertical-align: middle;
     justify-content: center;
-}
-.hero-content{
-    color: #fff;
     text-align: center;
 }
-
-
-.hero-content img{
+.hero img{
     height: 19.4rem;
     width: 19.4rem;
     object-fit: cover;
     transition: all 0.4s;
 }
+.hero-content{
+    color: #fff;
+}
+
 .hero-content h1{
     font-size: 1.8rem;
     padding: 32px 0 2px;
@@ -696,6 +694,12 @@ a, a:visited{
     .hero{
         height: calc(100vh - 72px);
         padding-top: 14vh;
+    }
+    .hero-content{
+        position: absolute;
+        bottom: 36px;
+        left: 50%;
+        transform: translateX(-50%);
     }
     .hero-content h1{
         font-size: 2.4rem;
