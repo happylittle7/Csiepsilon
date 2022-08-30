@@ -418,7 +418,6 @@ a, a:visited{
 }
 .intro-bg{
     background-color: var(--intro-bg-color);
-    height: 100%;
     width: 100%;
     padding: 40px 44px 40px;
 }
