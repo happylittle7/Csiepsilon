@@ -100,7 +100,7 @@ a, a:visited{
     right: 0;
     top: 0;
     width: 100%;
-    background-color: transparent;
+    background-image: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0));
     color: #fff;
     display: flex;
     justify-content: left;
@@ -108,7 +108,8 @@ a, a:visited{
     transition: all 0.6s;
 }
 .headerScroll{
-    background-color: rgba(48, 39, 68, 1);
+    background: rgba(48, 39, 68, 1);
+
 }
 .header-title{
     min-width: 180px;
