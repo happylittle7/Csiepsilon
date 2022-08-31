@@ -11,7 +11,7 @@ mask.addEventListener( "click", () => {
 })
 */
 var TypingBarBlink = setInterval( ()=>{
-    const TypingBar = document.querySelector(".intro-title").querySelector("span");
+    const TypingBar = document.querySelector(".section-title").querySelector("span");
     if(TypingBar.style.visibility == "visible"){
         TypingBar.style.visibility = "hidden";
     }else{
@@ -19,14 +19,20 @@ var TypingBarBlink = setInterval( ()=>{
     }
 }, 1000)
 
+/*      get title and push into titletexts      */
+var titlePos = document.querySelectorAll(".section-title"), titleTexts = [];
+for(let i = 0; i < titlePos.length; i++){
+    let titleText = titlePos[i].querySelector("h2").getAttribute("id");
+    titleTexts.push(titleText);
+}
+
 function TypingAnimaton(TypingLocation){
-    let titleTexts = ["About us"], totalText, titleLocation = [".intro-title"],
-        titleTag = titleLocation[TypingLocation], titleText = titleTexts[TypingLocation];
-    const title = document.querySelector(titleTag).querySelector("h2");
-    for(let i = 1; i < titleText.length+1; i++){
+    let titleLocation = document.querySelectorAll(".section-title"), titleTag = titleLocation[TypingLocation].querySelector("h2"), 
+        insertText = titleTexts[TypingLocation], totalText;
+    for(let i = 1; i < insertText.length+1; i++){
         setTimeout( ()=>{
-            totalText = titleText.slice(0, i);
-            title.innerHTML = totalText;
+            totalText = insertText.slice(0, i);
+            titleTag.innerHTML = totalText;
         }, 100*i + baffa);
     }
 }
@@ -38,46 +44,63 @@ function TypingAnimaton(TypingLocation){
 var eventCoordinate = [], eventFlag = [], eventHandler;
 const eventPoints = document.querySelectorAll(".checkPoint");
 const eventNum = eventPoints.length;
-const headerHeight = document.querySelector(".container").getBoundingClientRect().top;
 for(let i = 0; i < eventNum; i++){
-    let elem = eventPoints[i];
+    let elem = eventPoints[i].querySelector(".section-title");
     let rect = elem.getBoundingClientRect();
-    eventCoordinate.push(rect.top + window.pageYOffset - headerHeight);
+    eventCoordinate.push(rect.top + window.pageYOffset);
     eventFlag.push(false);
 }
 
 /*      telling device      */
-var parent, scrolly, baffa;
+var scrolly, baffa;
 if(window.matchMedia && window.matchMedia('(max-device-width: 960px)').matches){
-    parent = window;
     baffa = 0;
 }else{
-    parent = document.querySelector(".container");   
     baffa = 500;
 }
 
-parent.addEventListener("scroll", () =>{
-    if(window.matchMedia && window.matchMedia('(max-device-width: 960px)').matches){
-        scrolly = parent.scrollY;
-    }else{ 
-        scrolly = parent.scrollTop;
-    }
+window.addEventListener("scroll", () =>{
+    scrolly = window.scrollY;
 
     /*      analyzing eventHandler     */
     switch(true){
-        case scrolly <= eventCoordinate[0]:
-            eventHandler = 0;
-            break;
-        default:
-            eventHandler = 1;
-            if(!eventFlag[1]){
-                TypingAnimaton(1 - 1);
-                eventFlag[1] = true;
+        case scrolly > eventCoordinate[2]:
+            eventHandler = 2;
+            if(!eventFlag[eventHandler]){
+                TypingAnimaton(eventHandler);
+                eventFlag[eventHandler] = true;
             }
+            break;
+        
+        case scrolly > eventCoordinate[1]:
+            eventHandler = 2;
+            if(!eventFlag[eventHandler]){
+                TypingAnimaton(eventHandler);
+                eventFlag[eventHandler] = true;
+            }
+            break;
+        
+        case scrolly > eventCoordinate[0]:
+            eventHandler = 1;
+            if(!eventFlag[eventHandler]){
+                TypingAnimaton(eventHandler);
+                eventFlag[eventHandler] = true;
+            }
+            break;
+
+        default:
+            eventHandler = 0;
+            if(!eventFlag[eventHandler]){
+                TypingAnimaton(eventHandler);
+                eventFlag[eventHandler] = true;
+            }
+            break;
+           
     }
+    console.log(eventHandler);
     /*      header transparent     */
     const header = document.querySelector(".header");
-    if(eventHandler != 0){
+    if(scrolly != 0){
         header.classList.add("headerScroll");
     }else{
         header.classList.remove("headerScroll");

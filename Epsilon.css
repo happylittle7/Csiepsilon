@@ -3,7 +3,9 @@
     /* happy    : 50 40 */
     --card-height:  40rem;
     --card-width:   35rem;
-    --intro-bg-color: #fff;
+    --section-bg-color: #fff;
+    --section-edge: 40px;
+    --section-width: 100%;
 }
 
 /*      z-index 
@@ -100,7 +102,7 @@ a, a:visited{
     right: 0;
     top: 0;
     width: 100%;
-    background-image: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0));
+    background-color: transparent;
     color: #fff;
     display: flex;
     justify-content: left;
@@ -108,8 +110,7 @@ a, a:visited{
     transition: all 0.6s;
 }
 .headerScroll{
-    background: rgba(48, 39, 68, 1);
-
+    background-color: rgba(48, 39, 68, 1);
 }
 .header-title{
     min-width: 180px;
@@ -413,26 +414,52 @@ a, a:visited{
 
 */
 
-.intro{
-    width: 100%;
+.section{
+    width: var(--section-width);
     color: #000;
+    height: auto;
+    padding: 6rem 0rem;
+    margin: 0 auto;
 }
-.intro-bg{
-    background-color: var(--intro-bg-color);
+.section-bg{
+    background-color: var(--section-bg-color);
+    height: 100%;
     width: 100%;
-    padding: 40px 44px 40px;
+    padding: 0px 44px;
+    position: relative;
 }
-.intro-title{
+.section-bg::before, 
+.section-bg::after{
+    content: "";
+    font-size: 0;
+    width: calc(100% - var(--section-edge));
+    height: 0;
+    display: block;
+    position: absolute;
+    right: 0;
+}
+.section-bg::before{
+    border-bottom: solid var(--section-edge) var(--section-bg-color);
+    border-left: solid var(--section-edge) transparent;
+    bottom: calc(100% - 1px);
+}
+.section-bg::after{
+    border-top: solid var(--section-edge) var(--section-bg-color);
+    border-right: solid var(--section-edge) transparent;
+    top: calc(100% - 1px);
+}
+
+.section-title{
     font-size: 2.08rem;
     display: inline-block;
     position: relative;
     vertical-align: middle;
     white-space: nowrap;
 }
-.intro-title h2{
+.section-title h2{
     display: inline-block;
 }
-.intro-title span{
+.section-title span{
     user-select: none;
     background-color: #000;
     width: 2px;
@@ -444,7 +471,7 @@ a, a:visited{
     transform: translateY(-50%);
 }
 
-.intro-content{
+.section-content{
     padding: 9.2px 0;
     font-size: 1.64rem;
 }
@@ -681,14 +708,6 @@ a, a:visited{
     }
 
 
-    .container{
-        scroll-snap-type: y mandatory;
-        overflow: auto;
-        height: calc(100vh - 72px);
-    }
-    .container::-webkit-scrollbar{
-        width: 0;
-    }
     .checkPoint{
         scroll-snap-align: start;
         height: calc(100vh - 72px);
@@ -710,35 +729,11 @@ a, a:visited{
     .hero-content h2{
         font-size: 1.8rem;
     }
-    .intro{
-        height: calc(100vh - 72px);
-        padding: 6rem 7.2rem;
-        margin: 0 auto;
-    }
-    .intro-bg{
+    .section-bg{
         padding-top: 0;
         position: relative;
     }
-    .intro-bg::before, 
-    .intro-bg::after{
-        width: calc(100% - 40px);
-        height: 0;
-        display: block;
-        position: absolute;
-        right: 0;
-        content: "";
-    }
-    .intro-bg::before{
-        border-bottom: solid 40px var(--intro-bg-color);
-        border-left: solid 40px transparent;
-        bottom: 100%;
-    }
-    .intro-bg::after{
-        border-top: solid 40px var(--intro-bg-color);
-        border-right: solid 40px transparent;
-        top: 100%;
-    }
-    .intro-title{
+    .section-title{
         font-size: 2.4rem;
     }
 /* testing-bg rgb(70, 94, 121) */
