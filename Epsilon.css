@@ -487,6 +487,11 @@ ul a,ul a:visited{
 }
 
 .card{
+
+    background-image:  radial-gradient(#83c6bf 0.5px, transparent 0.5px), radial-gradient(#83c6bf 0.5px, #ffffff 0.5px);
+    background-size: 20px 20px;
+    background-position: 0 0,10px 10px;
+
     font-size: 2.6rem;
     background-color: #fff;
     width: 320px;
