@@ -194,7 +194,7 @@ a, a:visited{
 .ul-list li:hover::after{
     width: 100%;
 }
-.ul-list li a,.header ul li a:visited{
+ul a,ul a:visited{
     color: white;
 }
 
@@ -486,14 +486,35 @@ a, a:visited{
 }
 
 .card{
-    height: var(--card-height);
-    width: var(--card-width);
     font-size: 2.6rem;
     background-color: #fff;
+    width: 320px;
+    height: 420px;
+    padding: 20px;
+    border-radius: 12px;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
-    margin: 0 auto 5rem;
+    margin: 0 auto 50px;
     overflow: hidden;
     position: relative;
+}
+.card *{
+    user-select: none;
+}
+.event-info{
+}
+.event-info ul{
+    font-size: 0;
+    text-align: right;
+}
+.event-info ul li{
+    display: inline;
+    list-style: none;
+    padding-left: 6px;
+    font-size: 14px;
+}
+.event-number{
+    text-align: right;
+    font-size: 14px;
 }
 /*
 .card:nth-child(3n-2){
@@ -504,71 +525,40 @@ a, a:visited{
 }
 */
 
-.card-image-area{
-    height: calc(2/3 * var(--card-height));
-    position: relative;
-    transition: all 0.4s;
-}
-.card-image{
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
-    position: relative;
-}
-.card-image-area::after{
-    content: "";
-    opacity: 0;
-    background-color:rgb(46, 42, 0);
-    height: 100%;
-    width: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    transition: all 0.4s;
-}
-.tag{
-    z-index: 50;
-    font-size: 1.6rem;
-    width: 8rem;
-    padding: 1rem 1.5rem;
-    background-color: rgb(240, 61, 61);
-    position: absolute;
-    bottom: 0px;
-    left: 0px;
-    color: white;
-}
-.card-detail{
+.event-detail{
     padding-left: 2.5rem;
 }
-.detail-title{
-    padding: 1rem 0;
-}
-.card ul{
-    display: flex;
-    font-size: 0;
-}
-.card ul li{
-    padding-right: 0.8rem;
-    list-style: none;
-    font-size: 1.3rem;
-}
-.detail-time{
-    display: flex;
-    font-size: 1.8rem;
-    padding-top: 2.5rem;
-    color: brown;
-}
-.card-description{ 
+.event-title{
+    font-weight: bolder;
+    height: 120px;
+    font-size: 36px;
     overflow: hidden;
-    transition: all 0.6s;
-    padding: 2.5rem 2.5rem 1rem;
-    opacity: 0;
-    position: relative;
-    top: -100;
-    font-size: 2rem;
+}
+.detail{
+    font-size: 2px;
+    padding: 14px 0 10px 0;
+}
+.detail-icon img{
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+}
+.detail-name{
+    height: 100px;
+    padding: 4px 0 10px;
+    font-size: 18px;
+}
+.event-tag{
+    z-index: 50;
+    font-size: 14px;
+    padding: 10px 12px;
+    border-radius: 10px;
+    background-color: rgb(240, 61, 61);
+    color: white;
 }
 
-.card:hover .card-description{
+
+.card:hover .event-description{
     opacity: 1;
     top: 100;
 }
@@ -676,7 +666,7 @@ a, a:visited{
         display: inline-block;
         position: absolute;
         right: 0;
-        padding-right: 8vw;
+        padding-right: 6vw;
     }
     .header ul li{
         display: inline-block;
@@ -700,7 +690,7 @@ a, a:visited{
     .header ul li:hover::after{
         width: 100%;
     }
-    .header ul li a,.header ul li a:visited{
+    .header ul a,.header ul a:visited{
         color: white;
     }
     .menu-bar{
