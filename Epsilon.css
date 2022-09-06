@@ -531,8 +531,8 @@ ul a,ul a:visited{
 }
 .event-title{
     font-weight: bolder;
-    height: 120px;
-    font-size: 36px;
+    height: 150px;
+    font-size: 33px;
     overflow: hidden;
 }
 .detail{
@@ -545,7 +545,7 @@ ul a,ul a:visited{
     border-radius: 50%;
 }
 .detail-name{
-    height: 100px;
+    height: 70px;
     padding: 4px 0 10px;
     font-size: 18px;
 }
