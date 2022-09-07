@@ -496,9 +496,31 @@ ul a,ul a:visited{
     margin: 0 auto 50px;
     overflow: hidden;
     position: relative;
+    cursor: pointer;
 }
-.card *{
-    user-select: none;
+.event-type{
+    font-size: 16px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 80px;
+    width: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    clip-path: polygon(0 0, 100% 0, 0 100%);
+}
+.event-type[class ~= "tech"]{
+    background-color: #46888b;
+}
+.event-type[class ~= "prog"]{
+    background-color: aquamarine;
+}
+
+.event-type span{
+    position: absolute;
+    top: 10px;
+    left: 10px;
 }
 .event-info{
 }
@@ -529,6 +551,7 @@ ul a,ul a:visited{
     padding-left: 2.5rem;
 }
 .event-title{
+    padding-top: 16px;
     font-weight: bolder;
     height: 120px;
     font-size: 36px;
@@ -546,7 +569,7 @@ ul a,ul a:visited{
 .detail-name{
     height: 100px;
     padding: 4px 0 10px;
-    font-size: 18px;
+    font-size: 16px;
 }
 .event-tag{
     z-index: 50;
@@ -569,7 +592,7 @@ ul a,ul a:visited{
     opacity: 0.5;
 }
 
-.mask{
+.team_window_mask{
     z-index: 999;
     background-color: rgba(0, 0, 0, 0.6);
     height: 100%;
@@ -577,13 +600,13 @@ ul a,ul a:visited{
     position: fixed;
     top: 0;
     left: 0;
-    opacity: 1;
-    visibility: visible;
-    transition: all 0.4s;
-}
-.mask-close{
     opacity: 0;
     visibility: hidden;
+    transition: all 0.4s;
+}
+.mask_active{
+    opacity: 1;
+    visibility: visible;
 }
 
 .testCard{

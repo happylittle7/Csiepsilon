@@ -1,15 +1,15 @@
-/*
-const mask = document.getElementsByClassName("mask")[0];
+
+const mask = document.getElementsByClassName("team_window_mask")[0];
 const trig = document.querySelector(".card");
 trig.addEventListener("click", ()=>{
-    mask.classList.remove("mask-close");
+    mask.classList.add("mask_active");
 })
 
 
-mask.addEventListener( "click", () => {
-    mask.classList.add("mask-close");
+mask.addEventListener("click", ()=>{
+    mask.classList.remove("mask_active");
 })
-*/
+
 var TypingBarBlink = setInterval( ()=>{
     const TypingBar = document.querySelector(".section-title").querySelector("span");
     if(TypingBar.style.visibility == "visible"){
