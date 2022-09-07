@@ -5,7 +5,7 @@
     --card-width:   35rem;
     --section-bg-color: #fff;
     --section-edge: 40px;
-    --section-width: 100%;
+    --section-width: 80%;
 }
 
 /*      z-index 
@@ -102,7 +102,7 @@ a, a:visited{
     right: 0;
     top: 0;
     width: 100%;
-    background-color: transparent;
+    background-image: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0));
     color: #fff;
     display: flex;
     justify-content: left;
@@ -111,6 +111,7 @@ a, a:visited{
 }
 .headerScroll{
     background-color: rgba(48, 39, 68, 1);
+    background-image: none;
 }
 .header-title{
     min-width: 180px;
@@ -486,6 +487,11 @@ ul a,ul a:visited{
 }
 
 .card{
+
+    background-image:  radial-gradient(#83c6bf 0.5px, transparent 0.5px), radial-gradient(#83c6bf 0.5px, #ffffff 0.5px);
+    background-size: 20px 20px;
+    background-position: 0 0,10px 10px;
+
     font-size: 2.6rem;
     background-color: #fff;
     width: 320px;
@@ -553,8 +559,8 @@ ul a,ul a:visited{
 .event-title{
     padding-top: 16px;
     font-weight: bolder;
-    height: 120px;
-    font-size: 36px;
+    height: 150px;
+    font-size: 33px;
     overflow: hidden;
 }
 .detail{
@@ -567,7 +573,7 @@ ul a,ul a:visited{
     border-radius: 50%;
 }
 .detail-name{
-    height: 100px;
+    height: 70px;
     padding: 4px 0 10px;
     font-size: 16px;
 }
