@@ -1,11 +1,14 @@
 
 var TypingBarBlink = setInterval( ()=>{
-    const TypingBar = document.querySelector(".section-title").querySelector("span");
-    if(TypingBar.style.visibility == "visible"){
-        TypingBar.style.visibility = "hidden";
-    }else{
-        TypingBar.style.visibility = "visible";
-    }
+    const TypingBar = document.querySelectorAll(".section-title");
+    TypingBar.forEach(Element => {
+        let TypingBarPos = Element.querySelector("span");
+        if(TypingBarPos.style.visibility == "visible"){
+            TypingBarPos.style.visibility = "hidden";
+        }else{
+            TypingBarPos.style.visibility = "visible";
+        }
+    });
 }, 1000)
 
 /*      get title and push into titletexts      */
