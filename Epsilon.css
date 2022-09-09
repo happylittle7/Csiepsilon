@@ -776,6 +776,54 @@ ul a,ul a:visited{
     object-fit: cover;
 }
 
+.trafic_news{
+    padding: 50px 20px;
+    display: grid;
+    grid-template-columns: 700px 1fr;
+    gap: 10px;
+}
+.trafic_map{
+    grid-column: 1;
+    grid-row: 1;
+    display: flex;
+    position: fixed;
+    left: calc((700px - 600px) / 2 + 20px);
+    justify-content: center;
+}
+.trafic_method{
+    grid-column: 2;
+    grid-row: 1;
+    color: white;
+}
+.trans{
+    padding-bottom: 30px;
+}
+.bus_title, .train_title{
+    font-size: 30px;
+    display: inline-block;
+    padding-bottom: 12px;
+}
+.bus_title::after{
+    content: "附近公車站";
+}
+.train_title::after{
+    content: "附近捷運站";
+}
+.trans ul{
+    font-size: 0;
+}
+.trans ul li{
+    padding: 10px;
+    list-style: none;
+}
+.station_name{
+    color: greenyellow;
+    font-size: 20px;
+}
+.trans_number{
+    font-size: 16px;
+}
+
 .footer{
     height: 60px;
     background-color: #fff;
