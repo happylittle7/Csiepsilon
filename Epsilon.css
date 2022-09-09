@@ -33,6 +33,9 @@ html{
 body{
     background-color: rgb(70, 94, 121);
 }
+.body_stick{
+    overflow: hidden;
+}
 .i{
     display: inline-block;
 }
@@ -617,10 +620,10 @@ ul a,ul a:visited{
 }
 
 .team_card{
-    border-radius: 58px;
-    height: calc(100vh - 60px);
-    width: min(calc(100vw - 60px) ,1280px);
-    padding: 30px;
+    border-radius: 40px;
+    height: calc(100vh - 120px);
+    width: calc(100vw - 40px);
+    padding: 16px;
     position: fixed;
     top: 50%;
     left: 50%;
@@ -630,7 +633,7 @@ ul a,ul a:visited{
     cursor: auto;
     opacity: 0;
     visibility: hidden;
-    transition: all 0.4s;
+    transition: all 0.4s ease-in;
 }
 .team_card_active{
     opacity: 1;
@@ -639,33 +642,54 @@ ul a,ul a:visited{
 .team_card *{
     cursor: auto;
 }
+
 .team_card_box{
     width: 100%;
     height: 100%;
-    border: 12px solid #A89B85;
-    border-radius: 48px;
-    padding: 36px 40px;
+    border: 4px solid #A89B85;
+    border-radius: 30px;
+    padding: 24px;
 }
 .team_card_content{
+    position: relative;
     width: 100%;
     height: 100%;
     padding-right: 20px;
     overflow-y: scroll;
     overflow-x: hidden;
 }
+.close_button{
+    z-index: 1001;
+    position: fixed;
+    top: calc((100% - (100vh - 120px)) / 2 + 28px - 6px);
+    right: calc((100% - (100vw - 40px)) / 2 + 28px - 6px);
+    background: #f4eee1;
+    border-radius: 50%;
+    padding: 6px;
+    line-height: 0;
+    font-size: 40px;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.5s;
+    
+}
+.close_button_active{
+    opacity: 1;
+    visibility: visible;
+}
 .team_agenda_info{
     font-family:  Roboto Condensed, sans-serif;
-    font-size: 20px;
-    letter-spacing: -1px;
+    font-size: 14.8px;
+    letter-spacing: -0.6px;
     font-weight: 700;
 }
 .team_agenda_title{
-    font-size: 37px;
+    font-size: 23px;
 }
 .team_agenda_time{
     text-align: left;
     font-family:  Roboto Condensed, sans-serif;
-    font-size: 20px;
+    font-size: 15px;
     letter-spacing: -1px;
     font-weight: 500;
 }
@@ -674,24 +698,20 @@ ul a,ul a:visited{
     font-size: 0;
 }
 .team_agenda_time ul li{
-    font-size: 18px;
+    font-size: 15px;
     display: inline;
     padding-left: 10px;
 }
 .team_agenda_content{
-    font-size: 18px;
+    font-size: 14px;
     padding: 20px 0 50px;
-    display: grid;
-    grid-template-columns: 1fr 256px;
-    grid-template-rows: 1fr;
-    gap: 30px;
 }
 .team_dialog{
     grid-row: 1;
     grid-column: 1;
 }
 .dialog_tags{
-    font-size: 24.2px;
+    font-size: 20px;
 }
 .dialog_tags::before{
     content: "Tags: ";
@@ -699,23 +719,23 @@ ul a,ul a:visited{
     font-size: 18.6px;
 }
 .dialog_description{
-    padding: 16px 0;
-    font-size: 16px;
-    line-height: 36px;
+    padding: 8px 0;
+    font-size: 14px;
+    line-height: 26px;
 }
 .team_supplement{
     grid-template-columns: 1;
     grid-template-rows: 2;
 }
 .supplement_parser::before{
-    content: "你將會學到...";
+    content: "你將會聽到...";
 }
 .supplement_parser ul{
     padding-top: 30px;
     font-size: 0;
 }
 .supplement_parser ul li{
-    font-size: 18px;
+    font-size: 14.6px;
     padding: 0 0 8px 10px;
     list-style: none;
     position: relative;
@@ -732,24 +752,32 @@ ul a,ul a:visited{
     background-color: rgb(78, 90, 161);
 }
 .team_member_content{
-    display: grid;
-    grid-template-columns: 1fr 256px;
-    gap: 30px;
+    padding: 10px;
 }
+.team_member{
+    grid-row: 1;
+    grid-column: 1;
+}
+
 .member_name{
     padding-left: 16px;
-    font-size: 30px;
+    font-size: 18px;
     position: relative;
 }
+.member_description{
+    font-size: 16px;
+    padding-bottom: 14px;
+}
 .member_icon{
-    height: 100%;
-    width: 100%;
+    grid-row: 1;
+    grid-column: 2;
+    height: 80px;
+    width: 80px;
     object-fit: cover;
 }
 
-
 .footer{
-    height: 100px;
+    height: 60px;
     background-color: #fff;
     text-align: center;
     display: flex;
@@ -840,6 +868,70 @@ ul a,ul a:visited{
     .cards{
         padding: 50px 100px;
     }
+    .close_button{
+        right: calc(100% - min(calc(100vw - 60px) ,1280px) + 30px);
+        top: calc((100% - (100vh - 60px)) / 2 + 30px + 12px + 36px);
+        font-size: 50px;
+    }
+    .team_card{
+        height: calc(100vh - 100px);
+        width: min(calc(100vw - 60px) ,1280px);
+        padding: 30px;
+        border-radius: 58px;
+    }
+    .team_card_box{
+        border-width: 12px;
+        padding: 36px 40px;
+        border-radius: 48px;
+    }
+    .team_agenda_info{
+        font-size: 20px;
+    }
+    .team_agenda_title{
+        font-size: 37px
+    }
+    .team_agenda_time{
+        font-size: 20px;
+    }
+    .time_agenda_time ul li{
+        font-size: 18px;
+    }
+    .team_agenda_content{
+        font-size: 18px;
+        display: grid;
+        grid-template-columns: 1fr 256px;
+        grid-template-rows: 1fr;
+        gap: 30px;
+    }
+    .dialog_tags{
+        font-size: 24.2px;  
+    }
+    .dialog_description{
+        padding: 16px 0;
+        font-size: 16px;
+        line-height: 34px;
+    }
+    .supplement_parser ul li{
+        font-size: 18px;
+    }
+    .team_member_content{
+        display: grid;
+        grid-template-columns: 1fr 256px;
+        gap: 30px;
+    }
+    .member_icon{
+        height: 100%;
+        width: 100%;
+    }
+    .member_name{
+        font-size: 30px;
+    }
+    .member_description{
+        padding: 4px;
+        line-height: 34px;
+        font-size: 18px;
+    }
+
 /* testing-bg rgb(70, 94, 121) */
     
 }
