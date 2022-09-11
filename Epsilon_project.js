@@ -160,8 +160,8 @@ var teamCard = [
                 img_url: "media/default_avatar.png"
             },{
                 name: "江彥蓁",
-                introduction: "helllllooooooooooo",
-                img_url: "media/default_avatar.png"
+                introduction: "我是科技組的總召。曾參加許相關競賽，如WRO、FLL等。順帶一提，我是這次成發的主持人喔!",
+                img_url: "media/avatar/03.jpg"
             },
             {
                 name: "陳筠喬",
