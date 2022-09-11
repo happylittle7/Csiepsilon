@@ -331,9 +331,9 @@ function editCard(i){
             <div class="team_card_content">
                 <h2 class="team_agenda_info">Presentaion</h2>
                 <h1 class="team_agenda_title">` + teamCard[i].title + `</h1>
-                <div class="team_agenda_time">
-                    編號
-                    <ul>`
+                <div class="team_agenda_time">`
+                    + teamCard[i].serial +
+                    `<ul>`
                         + timeDOM +
                     `</ul>
                 </div>
@@ -365,30 +365,38 @@ function editCard(i){
     return cardDOM;
 }
 
+var haveOpened = false;
 function openCard(i){
-    body.classList.add("body_stick");
-    mask.classList.add("mask_active");
-    document.querySelector(".OpenCard").appendChild(editCard(i));
-    
-    const closeButton = document.querySelector(".close_button");
-    const cardPos = document.querySelector(".team_card");
-    closeButton.addEventListener("click", ()=>{
-        closeCard();
-    })
-    setTimeout(() => {
-    cardPos.classList.add("team_card_active");
-    }, 0.00001);
+    if(!haveOpened){
+        haveOpened = true;
+        body.classList.add("body_stick");
+        mask.classList.add("mask_active");
+        document.querySelector(".OpenCard").appendChild(editCard(i));
+        
+        const closeButton = document.querySelector(".close_button");
+        const cardPos = document.querySelector(".team_card");
+        closeButton.addEventListener("click", ()=>{
+            closeCard();
+        })
+        setTimeout(() => {
+        cardPos.classList.add("team_card_active");
+        }, 0.00000001);
+    }
 }
 
 function closeCard(){
-    body.classList.remove("body_stick");
-    mask.classList.remove("mask_active");
-    document.querySelector(".team_card").classList.remove("team_card_active");
-    setTimeout(() => {
-        if(!(document.querySelector(".team_card").classList.contains("team_card_active"))){
-            document.querySelector(".team_card").remove();
-        }
-    }, 500);
+    if(haveOpened){
+        body.classList.remove("body_stick");
+        mask.classList.remove("mask_active");
+        document.querySelector(".team_card").classList.remove("team_card_active");
+        setTimeout(() => {
+            if((document.querySelector(".team_card") !== null)){
+                document.querySelector(".team_card").remove();
+                haveOpened = false;
+            }
+        }, 500);
+
+    }
 }
 
 // open card
