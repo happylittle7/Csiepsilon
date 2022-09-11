@@ -142,12 +142,11 @@ var teamCard = [
     },{
         type: "Presentastion",
         title: "高壓空氣競速車",
-        serial: "編號",
+        serial: "A6",
         time: ["4:30", "4:50", "5:10", "5:20"],
         tag: "主題分享",
-        description: `在今年 2 月時，Linux kernel 5.8 之後被揭露了 arbitrary write read-only file 的漏洞，該漏洞被命名為 Dirty Pipe。對應到 Android 有 Google Pixel 6 和 SAMSUNG Galaxy S22 使用的 Android 12 可以觸發漏洞，我們嘗試在 Android 12 上透過此漏洞進行提權，並使用 Android Emulator x86_64 作為本次的環境。
-        在本次演講中，我們將會介紹如何透過 Dirty Pipe 劫持 init process、SELinux 實作細節並撰寫 kernel module 繞過 SELinux 和最後又是如何再度透過 Dirty Pipe 做到 load kernel module。`,
-        supplement: ["C++", "Go", "whiteSpace", "Vrainfuck"],
+        description: `空氣動力競速車這個課程首先提供我們對於空氣力學相關的知識，對賽車有更多的認識，將我們所學到有助於加快車子速度減少阻力的構思畫在設計圖上，為了底盤的平衡，我們設計時也十分講求精確。隨後我們用電腦畫車身的模型，這個部份我們學到了subD這個功能，車身更加細緻，之後組裝起來，測試這台車子的各項數據我們學到運用Flowdesign，和風洞測風阻，之後實際測試車子的跑動，第一次接觸高壓鋼瓶，也見識到了它的威力。`,
+        supplement: ["空氣力學", "如何減少阻力", "高壓鋼瓶的推動"],
         member: [
             {
                 name: "蔡秉融",
