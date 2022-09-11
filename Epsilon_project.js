@@ -116,12 +116,11 @@ var teamCard = [
     },{
         type: "Presentastion",
         title: "用Python預測股市趨勢",
-        serial: "編號",
+        serial: "A5",
         time: ["4:30", "4:50", "5:10", "5:20"],
-        tag: "主題分享",
-        description: `在今年 2 月時，Linux kernel 5.8 之後被揭露了 arbitrary write read-only file 的漏洞，該漏洞被命名為 Dirty Pipe。對應到 Android 有 Google Pixel 6 和 SAMSUNG Galaxy S22 使用的 Android 12 可以觸發漏洞，我們嘗試在 Android 12 上透過此漏洞進行提權，並使用 Android Emulator x86_64 作為本次的環境。
-        在本次演講中，我們將會介紹如何透過 Dirty Pipe 劫持 init process、SELinux 實作細節並撰寫 kernel module 繞過 SELinux 和最後又是如何再度透過 Dirty Pipe 做到 load kernel module。`,
-        supplement: ["C++", "Go", "whiteSpace", "Vrainfuck"],
+        tag: "神經網路, 深度學習, 股市預測",
+        description: `說到近年來的大新聞，肯定是一九年爆發的新冠疫情，它也造成了全球經濟大幅度的變化。我們覺得其中的起伏十分有意思，所以想要做出一個能夠預測股市的模型。訪問完兩位師長後，稍微學習到一些專業的判斷方式，如Ｋ線、年線等，也認知到股市預測的困難，所以決定以該支股票的過往收盤價為學習範本，預測未來兩週的收盤價變化。`,
+        supplement: ["Python", "利用LSTM、RNN模型實作", "深度神經網路應用", "針對不同模型，改變變因"],
         member: [
             {
                 name: "王子潔",
