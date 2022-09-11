@@ -28,12 +28,15 @@ var teamCard = [
     },{
         type: "Presentastion",
         title: "利用神經網路進行深度學習協助音樂相似度分析",
-        serial: "編號",
+        serial: "A2",
         time: ["4:30", "4:50", "5:10", "5:20"],
-        tag: "主題分享",
-        description: `在今年 2 月時，Linux kernel 5.8 之後被揭露了 arbitrary write read-only file 的漏洞，該漏洞被命名為 Dirty Pipe。對應到 Android 有 Google Pixel 6 和 SAMSUNG Galaxy S22 使用的 Android 12 可以觸發漏洞，我們嘗試在 Android 12 上透過此漏洞進行提權，並使用 Android Emulator x86_64 作為本次的環境。
-        在本次演講中，我們將會介紹如何透過 Dirty Pipe 劫持 init process、SELinux 實作細節並撰寫 kernel module 繞過 SELinux 和最後又是如何再度透過 Dirty Pipe 做到 load kernel module。`,
-        supplement: ["C++", "Go", "whiteSpace", "Vrainfuck"],
+        tag: "音樂相似度, 深度學習, 神經網路",
+        description: `你是否看過XX歌曲抄襲的新聞? 有沒有想過音樂如何判斷是否抄襲?<br>
+        在資訊科技的迅速發展下，機器學習也更為普遍運用<br>
+        因此我們將帶大家了解<br>
+        如何透過深度學習，以客觀的方式來分析音樂相似程度!!<br>  `,
+        supplement: [`利用Tensorflow實作孿生神經網路`, 
+                     `<span style="text-decoration:line-through">甚麼叫做羅密歐與傅立葉</span>`],
         member: [
             {
                 name: "吳俊廷",
@@ -176,8 +179,8 @@ var teamCard = [
             },
             {
                 name: "張守毅",
-                introduction: "helllllooooooooooo",
-                img_url: "media/default_avatar.png"
+                introduction: "陰錯陽差的進了最後一屆資電班後，開始對資訊科技感到興趣。",
+                img_url: "media/avatar/24.jpg"
             },
             {
                 name: "林鑫廷",
@@ -220,11 +223,11 @@ var teamCard = [
         tag: "主題分享",
         description: `Wordle在今年初風靡了全球，我的TimeLine也一度充滿著朋友的闖關狀況貼文。<br>
                       我透過學習JavaScript製作Google的擴充功能，取得每一筆輸入的輸出的狀況，以此為計算數據在Wordle上作弊，最終觀察這程式的效率。`,
-        supplement: ["JavaScript", "Google擴充功能"],
+        supplement: ["JavaScript", "Google擴充功能", `<span style="text-decoration:line-through">如何讓新鮮的肝快速榨乾</span>`],
         member: [
             {
                 name: "伊東和毅",
-                introduction: `我高一開始對程式產生興趣<br>題外話，這網頁也是我寫的喔`,
+                introduction: `我高一開始對程式產生興趣<br>題外話，這網頁也是我寫的呦`,
                 img_url: "media/default_avatar.png"
             }
         ]
