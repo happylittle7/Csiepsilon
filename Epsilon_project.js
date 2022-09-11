@@ -16,8 +16,8 @@ var teamCard = [
             },
             {
                 name: "靳皓雅",
-                introduction: "helllllooooooooooo",
-                img_url: "media/default_avatar.png"
+                introduction: "本名如上，可以叫我吉米。<br>高一時因緣際會(不想寫程式)下進入了科技組。<br>涉略的領域有油跟不油的，3D建模跟設計只是我的興趣，作編曲才是我(目前)的專長啦JOJO。<br>最後，看到我可以祝我一聲學測加油好嗎?",
+                img_url: "media/avatar/06.jpg"
             },
             {
                 name: "余易宸",
@@ -178,14 +178,14 @@ var teamCard = [
                 img_url: "media/default_avatar.png"
             },
             {
+                name: "林鑫廷",
+                introduction: "資電班冷笑話權威",
+                img_url: "media/avatar/19.jpg"
+            },
+            {
                 name: "張守毅",
                 introduction: "陰錯陽差的進了最後一屆資電班後，開始對資訊科技感到興趣。",
                 img_url: "media/avatar/24.jpg"
-            },
-            {
-                name: "林鑫廷",
-                introduction: "helllllooooooooooo",
-                img_url: "media/default_avatar.png"
             }
         ]
 
@@ -275,8 +275,8 @@ var teamCard = [
         member: [
             {
                 name: "蔡坤霖",
-                introduction: "helllllooooooooooo",
-                img_url: "media/default_avatar.png"
+                introduction: "我從小就對空間這方面的東西有很大的興趣，不管是樂高、房子、立體結構到蟲洞(?)，所以當高中有相關的專班我就進來了，雖然進來後才知道我們是最後一屆🙄",
+                img_url: "media/avatar/34.jpg"
             },{
                 name: "林祐廷",
                 introduction: "helllllooooooooooo",
