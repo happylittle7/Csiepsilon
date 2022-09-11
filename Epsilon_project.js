@@ -36,6 +36,8 @@ var teamCard = [
         因此我們將帶大家了解<br>
         如何透過深度學習，以客觀的方式來分析音樂相似程度!!<br>  `,
         supplement: [`利用Tensorflow實作孿生神經網路`, 
+                     `深度神經網路應用`,
+                     `如何對音樂進行特徵工程`,
                      `<span style="text-decoration:line-through">甚麼叫做羅密歐與傅立葉</span>`],
         member: [
             {
@@ -165,12 +167,11 @@ var teamCard = [
     },{
         type: "Presentastion",
         title: "如果我有台新冰箱",
-        serial: "編號",
+        serial: "B1",
         time: ["4:30", "4:50", "5:10", "5:20"],
         tag: "主題分享",
-        description: `在今年 2 月時，Linux kernel 5.8 之後被揭露了 arbitrary write read-only file 的漏洞，該漏洞被命名為 Dirty Pipe。對應到 Android 有 Google Pixel 6 和 SAMSUNG Galaxy S22 使用的 Android 12 可以觸發漏洞，我們嘗試在 Android 12 上透過此漏洞進行提權，並使用 Android Emulator x86_64 作為本次的環境。
-        在本次演講中，我們將會介紹如何透過 Dirty Pipe 劫持 init process、SELinux 實作細節並撰寫 kernel module 繞過 SELinux 和最後又是如何再度透過 Dirty Pipe 做到 load kernel module。`,
-        supplement: ["C++", "Go", "whiteSpace", "Vrainfuck"],
+        description: "<p>每週到賣場採買是例行公事。在買回家後總是煩惱著要如何「整理」冰箱內的東西，食品還常常被埋沒在深處而被遺忘，直到壞掉有味道出現才被發現。由於上述情況，我們想用unity做出一個APP，輔助我們整理冰箱。預計功能要能紀錄冰箱內的東西有哪些，並能顯示出快要過期的食品，提醒我記得要處理這些食物，不要再放到壞了！</p><p>在這次的研究中我們成功的透過C#編寫Unity內程式碼及在網路上搜尋相關教學資源，得到相關知識的方式做出一個App，可以按照過期日期排出冰箱內的食材，在現有的介面下，還有很多可以改善的地方，希望在日後可以把更人性化的功能增加進來，並改善不方便的地方，讓使用者用起來更加輕鬆。</p>",
+        supplement: ["Unity C#"],
         member: [
             {
                 name: "游以丞",
@@ -266,12 +267,11 @@ var teamCard = [
     },{
         type: "Presentastion",
         title: "參數設計",
-        serial: "編號",
+        serial: "A4",
         time: ["4:30", "4:50", "5:10", "5:20"],
         tag: "主題分享",
-        description: `在今年 2 月時，Linux kernel 5.8 之後被揭露了 arbitrary write read-only file 的漏洞，該漏洞被命名為 Dirty Pipe。對應到 Android 有 Google Pixel 6 和 SAMSUNG Galaxy S22 使用的 Android 12 可以觸發漏洞，我們嘗試在 Android 12 上透過此漏洞進行提權，並使用 Android Emulator x86_64 作為本次的環境。
-        在本次演講中，我們將會介紹如何透過 Dirty Pipe 劫持 init process、SELinux 實作細節並撰寫 kernel module 繞過 SELinux 和最後又是如何再度透過 Dirty Pipe 做到 load kernel module。`,
-        supplement: ["C++", "Go", "whiteSpace", "Vrainfuck"],
+        description: "在現代生活中，參數設計這門課題已是與我們不可分割的一部份了，像是設計大樓、零件、車子都有他的身影。參數設計的基本思想是通過選擇系統中所有參數(包括原材料、零件、元件等)的最佳水平組合，從而儘量減少外部、内部和產品間三種干擾的影響,使所設計的產品質量特性波動小，穩定性好。另外，在參數設計階段，一般選用能滿足使用環境條件的最低質量等級的元件和性價比高的加工精度來進行設計，使產品的質量和成本兩方面均得到改善。",
+        supplement: ["雷雕機", "3D列印機", "Rhino 6", "Paneling Tool","布林運算"],
         member: [
             {
                 name: "蔡坤霖",
