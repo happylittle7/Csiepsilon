@@ -46,9 +46,14 @@ var teamCard = [
                 img_url: "media/default_avatar.png"
             },
             {
-                name: "王心妤",
-                introduction: "helllllooooooooooo",
-                img_url: "media/default_avatar.png"
+                name: "王心妤 / Starfish",
+                introduction: `我是海星 ! 
+                我的原則很簡單~C/C++是真理，Python是邪教，大括號不換行是毒瘤。<br>
+                國小啥的都不算，國三接觸Python，高一正式踏上C/C++不歸路...<br>
+                至今被學測搞得快忘記如何程式解題了，只會寫解體的程式。<br>
+                欲知後事如何，且待本人IG分曉 : <a href="https://www.instagram.com/hywvc_">https://www.instagram.com/hywvc_</a><br>
+                CodingSHE的S : <a href="https://codingshe.cf">https://codingshe.cf</a>`,
+                img_url: "media/avatar/02.jpg"
             },
             {
                 name: "盧恩佳",
