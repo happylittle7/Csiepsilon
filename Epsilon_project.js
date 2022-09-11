@@ -151,8 +151,8 @@ var teamCard = [
         member: [
             {
                 name: "蔡秉融",
-                introduction: "helllllooooooooooo",
-                img_url: "media/default_avatar.png"
+                introduction: "我對於這門課程很有興趣，手作一直都是一項令人興奮的事情",
+                img_url: "media/avatar/35.jpg"
             },
             {
                 name: "王宥威",
