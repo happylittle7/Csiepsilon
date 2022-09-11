@@ -505,6 +505,7 @@ ul a,ul a:visited{
 
 }
 .card *{
+    font-family:  Roboto Condensed, sans-serif;
     user-select: none;
     cursor: pointer;
 }
@@ -516,6 +517,7 @@ ul a,ul a:visited{
     height: 80px;
     width: 120px;
     display: flex;
+    font-weight: 500;
     justify-content: center;
     align-items: center;
     clip-path: polygon(0 0, 100% 0, 0 100%);
@@ -529,10 +531,11 @@ ul a,ul a:visited{
 
 .event-type span{
     position: absolute;
-    top: 10px;
+    top: 14px;
     left: 10px;
 }
 .event-info{
+    font-weight: 400;
 }
 .event-info ul{
     font-size: 0;
@@ -542,11 +545,11 @@ ul a,ul a:visited{
     display: inline;
     list-style: none;
     padding-left: 6px;
-    font-size: 14px;
+    font-size: 15.2px;
 }
 .event-number{
     text-align: right;
-    font-size: 14px;
+    font-size: 15.2px;
 }
 /*
 .card:nth-child(3n-2){
@@ -561,15 +564,15 @@ ul a,ul a:visited{
     padding-left: 2.5rem;
 }
 .event-title{
-    padding-top: 16px;
+    padding-top: 20px;
     font-weight: bolder;
     height: 100px;
-    font-size: 22px;
+    font-size: 23.2px;
     overflow: hidden;
 }
 .detail{
     font-size: 2px;
-    padding: 14px 0 0px 0;
+    padding: 17px 0 0px 0;
 }
 .detail-icon img{
     height: 40px;
@@ -577,13 +580,15 @@ ul a,ul a:visited{
     border-radius: 50%;
 }
 .detail-name{
+    font-weight: 500;
     height: 50px;
-    padding: 4px 0 0px;
+    padding: 7px 0 0px;
     font-size: 16px;
 }
 .event-tag{
     z-index: 50;
-    font-size: 14px;
+    font-size: 14.4px;
+    font-weight: 400;
     padding: 10px 12px;
     border-radius: 10px;
     background-color: rgb(240, 61, 61);
@@ -634,13 +639,14 @@ ul a,ul a:visited{
     cursor: auto;
     opacity: 0;
     visibility: hidden;
-    transition: all 0.4s ease-in;
+    transition: all 0.4s;
 }
 .team_card_active{
     opacity: 1;
     visibility: visible;
 }
 .team_card *{
+    font-family:  Roboto Condensed, sans-serif;
     cursor: auto;
 }
 
@@ -679,7 +685,6 @@ ul a,ul a:visited{
     visibility: visible;
 }
 .team_agenda_info{
-    font-family:  Roboto Condensed, sans-serif;
     font-size: 14.8px;
     letter-spacing: -0.6px;
     font-weight: 700;
@@ -689,7 +694,6 @@ ul a,ul a:visited{
 }
 .team_agenda_time{
     text-align: left;
-    font-family:  Roboto Condensed, sans-serif;
     font-size: 15px;
     letter-spacing: -1px;
     font-weight: 500;
@@ -778,26 +782,29 @@ ul a,ul a:visited{
     object-fit: cover;
 }
 
-.trafic_news{
+
+.trafic_container{
+    height: calc(100vh - 72px);
     padding: 50px 20px;
-    grid-template-columns: 700px 1fr;
-    gap: 10px;
+}
+.trafic_news{
 }
 .trafic_map{
+    height: 96%;
     padding-bottom: 40px;
     grid-column: 1;
     grid-row: 1;
-    display: flex;
     justify-content: center;
 }
 .trafic_map iframe{
-    height: 280px;
-    width: 260px;
+    height: 100%;
+    width: 100%;
 }
 .trafic_method{
     grid-column: 2;
     grid-row: 1;
     color: white;
+    overflow-y: scroll;
 }
 .trans{
     padding-bottom: 30px;
@@ -846,6 +853,33 @@ ul a,ul a:visited{
 @media screen and (min-width: 520px){
     html{
         font-size: 12px;
+    }
+    .header-title{
+        min-width: 400px;
+    }
+    .trafic_container{
+        display: grid;
+        grid-template-columns: min(700px, 60%) 1fr;
+        gap: 10px;
+        height: calc(100vh - 72px);
+        overflow: hidden;
+    }
+    .trafic_map{
+        padding: 20px 40px;
+        display: flex;
+        vertical-align: middle;
+        text-align: center;
+        height: 100%;
+        width: 100%;
+    }
+    .trafic_map iframe{
+        height: 100%;
+        width: 100%;
+    }
+    .trafic_method{
+        height: 100%;
+        overflow-y: scroll; 
+        width: 100%;
     }
 }
 /* for PC */
@@ -934,7 +968,7 @@ ul a,ul a:visited{
         padding-bottom: 10px;
     }
     .close_button{
-        right: calc(100% - min(calc(100vw - 60px) ,1280px) + 30px);
+        right: calc(100% - min(calc(100vw - 60px) ,1280px) + 30px + 36px + 12px);
         top: calc((100% - (100vh - 60px)) / 2 + 30px + 12px + 36px);
         font-size: 50px;
     }
@@ -965,7 +999,6 @@ ul a,ul a:visited{
         font-size: 18px;
         display: grid;
         grid-template-columns: 1fr 256px;
-        grid-template-rows: 1fr;
         gap: 30px;
     }
     .dialog_tags{
@@ -996,18 +1029,8 @@ ul a,ul a:visited{
         line-height: 34px;
         font-size: 18px;
     }
-
-
     .trafic_news{
-        display: grid;
-    }
-    .trafic_map{
-        position: fixed;
-        left: calc((700px - 600px) / 2 + 20px);
-    }
-    .trafic_map iframe{
-        height: 450px;
-        width: 600px;
+        overflow: hidden;
     }
     .bus_title, .train_title{
         font-size: 30px;
