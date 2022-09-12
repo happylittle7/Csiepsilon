@@ -141,8 +141,9 @@ var teamCard = [
             },
             {
                 name: "郎翊辰",
-                introduction: "helllllooooooooooo",
-                img_url: "media/default_avatar.png"
+                introduction: `Hello~ 我是郎翊辰<br>
+                因緣際會考進資電班，甚至到現在還是是不知道我為什麼在這裡，從剛進來完全沒學習過寫程式，一步一步從C++學起，到後來遇到瓶頸暫時放棄，結果現在遇到更大的瓶頸，所以，我又重拾對程式的熱情了。學測fighting`,
+                img_url: "media/avatar/21.jpg"
             },
             {
                 name: "黃政翰",
