@@ -174,8 +174,13 @@ var teamCard = [
             },
             {
                 name: "陳筠喬",
-                introduction: "helllllooooooooooo",
-                img_url: "media/default_avatar.png"
+                introduction: `科技組 副召<br>
+                是個看起來比實際年齡小很多的少女<br>
+                在資電班的兩年 不斷的試圖做出創意作品來搞死自己，未來希望能就讀設計相關科系<br>
+                在成發中負責：<br>
+                成發主持、紀念品製作、科技組海報整理等<br>
+                謝謝看到這邊的你呦~`,
+                img_url: "media/avatar/04.jpg"
             }
         ]
     },{
