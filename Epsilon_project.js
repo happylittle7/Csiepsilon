@@ -189,8 +189,10 @@ var teamCard = [
         member: [
             {
                 name: "游以丞",
-                introduction: "helllllooooooooooo",
-                img_url: "media/default_avatar.png"
+                introduction: `負責unity及C#程式開發<br>
+                習慣每日寫一個功能或解決一個問題<br>
+                不知到為什麼常常被認成科技組`,
+                img_url: "media/avatar/28.jpg"
             },
             {
                 name: "林鑫廷",
