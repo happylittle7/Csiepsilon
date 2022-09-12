@@ -64,12 +64,16 @@ var teamCard = [
     },{
         type: "Presentastion",
         title: "從零開始的RPG製作—Godot遊戲引擎探究與實作",
-        serial: "編號",
+        serial: "A3",
         time: ["4:30", "4:50", "5:10", "5:20"],
-        tag: "主題分享",
-        description: `在今年 2 月時，Linux kernel 5.8 之後被揭露了 arbitrary write read-only file 的漏洞，該漏洞被命名為 Dirty Pipe。對應到 Android 有 Google Pixel 6 和 SAMSUNG Galaxy S22 使用的 Android 12 可以觸發漏洞，我們嘗試在 Android 12 上透過此漏洞進行提權，並使用 Android Emulator x86_64 作為本次的環境。
-        在本次演講中，我們將會介紹如何透過 Dirty Pipe 劫持 init process、SELinux 實作細節並撰寫 kernel module 繞過 SELinux 和最後又是如何再度透過 Dirty Pipe 做到 load kernel module。`,
-        supplement: ["C++", "Go", "whiteSpace", "Vrainfuck"],
+        tag: "遊戲製作, RPG, 2D像素風",
+        description: `休閒活動上百種，其中一大宗就是遊戲了<br>
+        在設備不斷演進的情況下，遊戲也越來越普及、多元，更令人入迷<br>
+        身為一群重度遊戲沉迷者，漸漸從想"玩"到想"做"<br>
+        於是有了這次專題<br>
+        透過GODOT編寫程式加上自製的各式素材<br>
+        完成一個實際可玩的RPG遊戲`,
+        supplement: ["GODOT(GDscript)", "遊戲運行邏輯", "如何規劃一款遊戲", "<span style='text-decoration:line-through'>大型殘念現場</spam>"],
         member: [
             {
                 name: "徐士哲",
