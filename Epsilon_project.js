@@ -87,8 +87,8 @@ var teamCard = [
             },
             {
                 name: "游恒",
-                introduction: "helllllooooooooooo",
-                img_url: "media/default_avatar.png"
+                introduction: `興趣是卡牌遊戲的美少女<br><a href="https://wall.gamer.com.tw/redir.php?userId=yuheng0203">巴哈小屋連結</a>`,
+                img_url: "media/avatar/29.jpg"
             },
             {
                 name: "劉宸昕",
