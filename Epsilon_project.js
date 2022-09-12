@@ -145,8 +145,8 @@ var teamCard = [
             },
             {
                 name: "黃政翰",
-                introduction: "helllllooooooooooo",
-                img_url: "media/default_avatar.png"
+                introduction: "高中才接觸程式設計，誤打誤撞走入了這個奇幻世界。一開始還很迷糊，甚至認為自己不適合這條路，不過再往更深處走才發現這個領域有趣之處，希望未來能繼續鑽研下去。",
+                img_url: "media/avatar/30.jpg"
             }
         ]
     },{
