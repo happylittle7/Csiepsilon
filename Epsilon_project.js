@@ -92,8 +92,9 @@ var teamCard = [
             },
             {
                 name: "劉宸昕",
-                introduction: "helllllooooooooooo",
-                img_url: "media/default_avatar.png"
+                introduction: `不是美少女。<br>
+                最後一屆資電班成員。`,
+                img_url: "media/avatar/32.jpg"
             }
         ]
     },{
