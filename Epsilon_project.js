@@ -11,8 +11,8 @@ var teamCard = [
         member: [
             {
                 name: "塗嘉云",
-                introduction: "helllllooooooooooo",
-                img_url: "media/default_avatar.png"
+                introduction: `我是科技組的身高天花板，負責製作玩偶專題。我從有記憶開始就對手作很有興趣，因此也毫不猶豫的加入了資電班。希望我們這次的成發能成為各位有趣的回憶(๑´ㅂ\`๑)`,
+                img_url: "media/avatar/05.jpg"
             },
             {
                 name: "靳皓雅",
