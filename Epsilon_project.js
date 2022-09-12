@@ -112,7 +112,7 @@ var teamCard = [
                 img_url: "media/default_avatar.png"
             },
             {
-                name: "劉竣祐 / 光祐Guangyou",
+                name: "劉竣祐 / 光祐 Guangyou",
                 introduction: `國小為百齡國小資優班學生、國中為(區域衛星資賦優異方案)資優班學生、高中為資電學程班學生，從小對手作很有興趣，喜歡自己動手作出一些東西。生科能力極強(自稱)。高中認為數專太難考而轉考資電班，並嘗試在生科領域闖出一番天地。
                 高一後開始嘗試做YouTuber、作曲、寫歌、寫小說，直到高三才成功作出一首曲子(大部分為吉米幫助)。做YouTuber的契機是在國中被霸凌的三年時接觸到阿神後，成功從過往中走出，並希望自己能像阿神一樣帶給別人歡樂。
                 現為不知名YouTuber、類戰隊形式之公會(SuPer ASia)隊長、學測預備軍。<br>YouTube頻道(光祐Guangyou)：<a href="https://www.youtube.com/channel/UCI7OjJy-l1QAYZYuPaJYbag">https://www.youtube.com/channel/UCI7OjJy-l1QAYZYuPaJYbag</a><br>Twitcw頻道(光祐61757)：<a href="https://www.twitch.tv/guangyou61757">https://www.twitch.tv/guangyou61757</a>`,

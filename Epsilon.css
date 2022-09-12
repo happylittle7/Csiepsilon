@@ -857,6 +857,9 @@ ul a,ul a:visited{
     .header-title{
         min-width: 400px;
     }
+    .hero-content *{
+        min-width: 400px;
+    }
     .trafic_container{
         display: grid;
         grid-template-columns: min(700px, 60%) 1fr;
