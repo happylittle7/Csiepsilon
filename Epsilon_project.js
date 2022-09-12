@@ -165,8 +165,8 @@ var teamCard = [
             },
             {
                 name: "王宥威",
-                introduction: "helllllooooooooooo",
-                img_url: "media/default_avatar.png"
+                introduction: "前資電班成員。喜歡高更、村上龍、放克音樂。覺得科技3D繪圖很有趣。",
+                img_url: "media/avatar/11.jpg"
             },{
                 name: "江彥蓁",
                 introduction: "我是科技組的總召。曾參加許相關競賽，如WRO、FLL等。順帶一提，我是這次成發的主持人喔!",
