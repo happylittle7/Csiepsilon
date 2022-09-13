@@ -313,8 +313,8 @@ var teamCard = [
                 img_url: "media/avatar/34.jpg"
             },{
                 name: "林祐廷",
-                introduction: "helllllooooooooooo",
-                img_url: "media/default_avatar.png"
+                introduction: "自己動手總是一件有趣的事，如果不只限於興趣那就更好了，資電班科技組正是一個這樣的空間，這也正是為什麼我現在在這裡了。",
+                img_url: "media/avatar/18.jpg"
             },{
                 name: "張譽耀",
                 introduction: "資電班肝帝，手做還行吧",
