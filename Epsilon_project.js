@@ -230,7 +230,7 @@ var teamCard = [
             {
                 name: "黃資翔",
                 introduction: "科技組的一員，因為對於手作感到嚮往而加入資電班，進而發現機械結構的奧妙而深深被吸引。",
-                img_url: "media/default_avatar.png"
+                img_url: "media/avatar/31.jpg"
             },
             {
                 name: "陳鈺程",
