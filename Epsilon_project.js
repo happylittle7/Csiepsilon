@@ -216,12 +216,11 @@ var teamCard = [
     },{
         type: "Presentastion",
         title: "機構達人競賽-龍舟",
-        serial: "編號",
+        serial: "B2",
         time: ["4:30", "4:50", "5:10", "5:20"],
         tag: "主題分享",
-        description: `在今年 2 月時，Linux kernel 5.8 之後被揭露了 arbitrary write read-only file 的漏洞，該漏洞被命名為 Dirty Pipe。對應到 Android 有 Google Pixel 6 和 SAMSUNG Galaxy S22 使用的 Android 12 可以觸發漏洞，我們嘗試在 Android 12 上透過此漏洞進行提權，並使用 Android Emulator x86_64 作為本次的環境。
-        在本次演講中，我們將會介紹如何透過 Dirty Pipe 劫持 init process、SELinux 實作細節並撰寫 kernel module 繞過 SELinux 和最後又是如何再度透過 Dirty Pipe 做到 load kernel module。`,
-        supplement: ["C++", "Go", "whiteSpace", "Vrainfuck"],
+        description: `為了參加台北市政府所辦的機關達人大賽，我們數位同學決定組隊參與龍舟組的競賽，依照官方所給予的船體、馬達及制控板，按照規定進行修改和調整，經過數個禮拜的自行創作後，所有組別的船隻將實際下水，並根據是否能利用船首的龍頭進行奪旗、總耗時數及外觀創意分數來決定名次。競賽目的主要是考驗學生的設計和製作能力，和最重要的實際操作。這次專題發表，我們將與您分享設計、製作及測試作品的歷程和各項修改內容。`,
+        supplement: ["機構設計", "機器人", "建模"],
         member: [
             {
                 name: "黃資翔",
