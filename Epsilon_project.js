@@ -317,13 +317,13 @@ var teamCard = [
             },{
                 name: "張譽耀",
                 introduction: "資電班肝帝，手做還行吧",
-                img_url: "media/default_avatar.png"
+                img_url: "media/avatar/26.jpg"
             },{
                 name: "杜立晟",
                 introduction: `高中肥宅
                 妄想長大要當很酷的工程師
                 但是好像比較喜歡物理(?`,
-                img_url: "media/default_avatar.png"
+                img_url: "media/avatar/17.jpg"
             }
         ]
     }
