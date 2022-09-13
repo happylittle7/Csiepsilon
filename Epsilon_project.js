@@ -236,7 +236,7 @@ var teamCard = [
                 name: "陳鈺程",
                 introduction: `喜歡設計、手做，對設計遊戲腳色及組裝機械、樂高等尤其感興趣。高一時第一次接觸到了Rhinoceros後對繪圖設計更加著迷，稍微鑽研了一段時間，目前仍在學習，未來希望接觸更多不同繪圖軟體嘗試更多新的構思。<br>
                 <a href='https://www.youtube.com/watch?v=oz-prVP5qi4' target="_blank" rel="noreferrer noopener">傑出作品</a>`,
-                img_url: "media/default_avatar.png"
+                img_url: "media/avatar/27.jpg"
             },
             {
                 name: "范容齊",
