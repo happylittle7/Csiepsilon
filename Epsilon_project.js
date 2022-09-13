@@ -4,10 +4,10 @@ var teamCard = [
         title: "玩偶機構設計",
         serial: "編號",
         time: ["4:30", "4:50", "5:10", "5:20"],
-        tag: "主題分享",
-        description: `在今年 2 月時，Linux kernel 5.8 之後被揭露了 arbitrary write read-only file 的漏洞，該漏洞被命名為 Dirty Pipe。對應到 Android 有 Google Pixel 6 和 SAMSUNG Galaxy S22 使用的 Android 12 可以觸發漏洞，我們嘗試在 Android 12 上透過此漏洞進行提權，並使用 Android Emulator x86_64 作為本次的環境。
-        在本次演講中，我們將會介紹如何透過 Dirty Pipe 劫持 init process、SELinux 實作細節並撰寫 kernel module 繞過 SELinux 和最後又是如何再度透過 Dirty Pipe 做到 load kernel module。`,
-        supplement: ["C++", "Go", "whiteSpace", "Vrainfuck"],
+        tag: "3D建模, 人偶製作",
+        description: `大家是否有這種經驗呢？經過百貨公司的櫥窗看到玩具店里自己隨著音樂活動的神奇人偶呢？玩偶機構就是類似於這樣的存在，雖然沒有音樂，但透過樂高齒輪和玩偶的連接，每個機構都可以展現出自己的特色。
+        你將會聽到.....`,
+        supplement: ["創意設計", "3D建模", "辛苦但有趣的製作過程", "如何看到老婆動起來"],
         member: [
             {
                 name: "塗嘉云",
@@ -21,7 +21,8 @@ var teamCard = [
             },
             {
                 name: "余易宸",
-                introduction: "helllllooooooooooo",
+                introduction: `動手做最讚了<br> 
+                喜歡看金庸小說 最近在看鹿鼎記`,
                 img_url: "media/default_avatar.png"
             }
         ]
@@ -38,7 +39,7 @@ var teamCard = [
         supplement: [`利用Tensorflow實作孿生神經網路`, 
                      `深度神經網路應用`,
                      `如何對音樂進行特徵工程`,
-                     `<span style="text-decoration:line-through">甚麼叫做羅密歐與傅立葉</span>`],
+                     `<span class='delete'>甚麼叫做羅密歐與傅立葉</span>`],
         member: [
             {
                 name: "吳俊廷",
@@ -58,7 +59,7 @@ var teamCard = [
             {
                 name: "盧恩佳",
                 introduction: `學了Python , 一腳踏入Coding世界後，發現很多比賽可以用 C/C++,Java 但就是不給用python...<br>
-                （在這個硬體效能不斷進步的時代，簡單易上手用途又廣泛的python才是王道好嗎！！大概）<br>
+                <span class='little'>（在這個硬體效能不斷進步的時代，簡單易上手用途又廣泛的python才是王道好嗎！！大概）</span><br>
                 
                 APCS實作也肯定是用python 。苦於記不住&不使用c++語法，比賽基本死亡。<br>
                 
@@ -82,7 +83,11 @@ var teamCard = [
         member: [
             {
                 name: "徐士哲",
-                introduction: "helllllooooooooooo",
+                introduction: `我家的貓，可愛吧 →
+                無所事事的高三生，對程式頗有興趣
+                超級懶，程式能力一天比一天爛，被班上大佬扁到站不起來
+                好歹在成發上投了不少心力
+                給我順利一點啊= =`,
                 img_url: "media/default_avatar.png"
             },
             {
@@ -103,8 +108,7 @@ var teamCard = [
         serial: "編號",
         time: ["4:30", "4:50", "5:10", "5:20"],
         tag: "主題分享",
-        description: `在今年 2 月時，Linux kernel 5.8 之後被揭露了 arbitrary write read-only file 的漏洞，該漏洞被命名為 Dirty Pipe。對應到 Android 有 Google Pixel 6 和 SAMSUNG Galaxy S22 使用的 Android 12 可以觸發漏洞，我們嘗試在 Android 12 上透過此漏洞進行提權，並使用 Android Emulator x86_64 作為本次的環境。
-        在本次演講中，我們將會介紹如何透過 Dirty Pipe 劫持 init process、SELinux 實作細節並撰寫 kernel module 繞過 SELinux 和最後又是如何再度透過 Dirty Pipe 做到 load kernel module。`,
+        description: ``,
         supplement: ["C++", "Go", "whiteSpace", "Vrainfuck"],
         member: [
             {
@@ -190,7 +194,7 @@ var teamCard = [
         title: "如果我有台新冰箱",
         serial: "B1",
         time: ["4:30", "4:50", "5:10", "5:20"],
-        tag: "主題分享",
+        tag: "資料庫使用, 資料排序",
         description: "<p>每週到賣場採買是例行公事。在買回家後總是煩惱著要如何「整理」冰箱內的東西，食品還常常被埋沒在深處而被遺忘，直到壞掉有味道出現才被發現。由於上述情況，我們想用unity做出一個APP，輔助我們整理冰箱。預計功能要能紀錄冰箱內的東西有哪些，並能顯示出快要過期的食品，提醒我記得要處理這些食物，不要再放到壞了！</p><p>在這次的研究中我們成功的透過C#編寫Unity內程式碼及在網路上搜尋相關教學資源，得到相關知識的方式做出一個App，可以按照過期日期排出冰箱內的食材，在現有的介面下，還有很多可以改善的地方，希望在日後可以把更人性化的功能增加進來，並改善不方便的地方，讓使用者用起來更加輕鬆。</p>",
         supplement: ["Unity C#"],
         member: [
@@ -224,12 +228,13 @@ var teamCard = [
         member: [
             {
                 name: "黃資翔",
-                introduction: "helllllooooooooooo",
+                introduction: "科技組的一員，因為對於手作感到嚮往而加入資電班，進而發現機械結構的奧妙而深深被吸引。",
                 img_url: "media/default_avatar.png"
             },
             {
                 name: "陳鈺程",
-                introduction: "helllllooooooooooo",
+                introduction: `喜歡設計、手做，對設計遊戲腳色及組裝機械、樂高等尤其感興趣。高一時第一次接觸到了Rhinoceros後對繪圖設計更加著迷，稍微鑽研了一段時間，目前仍在學習，未來希望接觸更多不同繪圖軟體嘗試更多新的構思。<br>
+                <a href='https://www.youtube.com/watch?v=oz-prVP5qi4' target="_blank" rel="noreferrer noopener">傑出作品</a>`,
                 img_url: "media/default_avatar.png"
             },
             {
@@ -253,7 +258,9 @@ var teamCard = [
         member: [
             {
                 name: "伊東和毅",
-                introduction: `我高一開始對程式產生興趣<br>題外話，這網頁也是我寫的呦`,
+                introduction: `我原本入學時就報名了資電班入試，不知道為甚麼面試就被刷下去了<br>
+                高一上了Ｃ++的課後開始<span class='delete'>認真</span>學習程式<br>
+                題外話，這網頁也是我寫的呦`,
                 img_url: "media/default_avatar.png"
             }
         ]
@@ -269,7 +276,8 @@ var teamCard = [
         member: [
             {
                 name: "張文謙",
-                introduction: "helllllooooooooooo",
+                introduction: `高一開始接觸有關程式並產生興趣。
+                此次主題的平台是第一次使用正在努力學習中`,
                 img_url: "media/default_avatar.png"
             }
         ]
@@ -278,14 +286,14 @@ var teamCard = [
         title: "人臉口罩辨識",
         serial: "編號",
         time: ["4:30", "4:50", "5:10", "5:20"],
-        tag: "主題分享",
+        tag: "深度學習, 程式卡關",
         description: `在今年 2 月時，Linux kernel 5.8 之後被揭露了 arbitrary write read-only file 的漏洞，該漏洞被命名為 Dirty Pipe。對應到 Android 有 Google Pixel 6 和 SAMSUNG Galaxy S22 使用的 Android 12 可以觸發漏洞，我們嘗試在 Android 12 上透過此漏洞進行提權，並使用 Android Emulator x86_64 作為本次的環境。
         在本次演講中，我們將會介紹如何透過 Dirty Pipe 劫持 init process、SELinux 實作細節並撰寫 kernel module 繞過 SELinux 和最後又是如何再度透過 Dirty Pipe 做到 load kernel module。`,
-        supplement: ["C++", "Go", "whiteSpace", "Vrainfuck"],
+        supplement: ["深度學習", "程式卡關"],
         member: [
             {
                 name: "江威廷",
-                introduction: "helllllooooooooooo",
+                introduction: `你好<br>專題參考之程式碼網站：https://www.kaggle.com/code/sandhyakrishnan02/face-mask-detection-using-pytorch/notebook`,
                 img_url: "media/default_avatar.png"
             }
         ]
@@ -294,7 +302,7 @@ var teamCard = [
         title: "參數設計",
         serial: "A4",
         time: ["4:30", "4:50", "5:10", "5:20"],
-        tag: "主題分享",
+        tag: "主數位加工, 立體建模, 3D列印, 雷射雕刻",
         description: "在現代生活中，參數設計這門課題已是與我們不可分割的一部份了，像是設計大樓、零件、車子都有他的身影。參數設計的基本思想是通過選擇系統中所有參數(包括原材料、零件、元件等)的最佳水平組合，從而儘量減少外部、内部和產品間三種干擾的影響,使所設計的產品質量特性波動小，穩定性好。另外，在參數設計階段，一般選用能滿足使用環境條件的最低質量等級的元件和性價比高的加工精度來進行設計，使產品的質量和成本兩方面均得到改善。",
         supplement: ["雷雕機", "3D列印機", "Rhino 6", "Paneling Tool","布林運算"],
         member: [
@@ -308,11 +316,13 @@ var teamCard = [
                 img_url: "media/default_avatar.png"
             },{
                 name: "張譽耀",
-                introduction: "helllllooooooooooo",
+                introduction: "資電班肝帝，手做還行吧",
                 img_url: "media/default_avatar.png"
             },{
                 name: "杜立晟",
-                introduction: "helllllooooooooooo",
+                introduction: `高中肥宅
+                妄想長大要當很酷的工程師
+                但是好像比較喜歡物理(?`,
                 img_url: "media/default_avatar.png"
             }
         ]

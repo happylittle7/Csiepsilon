@@ -649,6 +649,9 @@ ul a,ul a:visited{
     font-family:  Roboto Condensed, sans-serif;
     cursor: auto;
 }
+.team_card a{
+    cursor: pointer;
+}
 
 .team_card_box{
     width: 100%;
@@ -762,6 +765,12 @@ ul a,ul a:visited{
 .team_member{
     grid-row: 1;
     grid-column: 1;
+}
+.delete{
+    text-decoration: line-through;
+}
+.little{
+    font-size: 12px;
 }
 
 .member_name{
@@ -1033,6 +1042,10 @@ ul a,ul a:visited{
         line-height: 34px;
         font-size: 18px;
     }
+    .little{
+        font-size: 14px;
+    }
+    
     .trafic_news{
         overflow: hidden;
     }
