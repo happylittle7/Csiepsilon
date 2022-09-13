@@ -858,7 +858,7 @@ ul a,ul a:visited{
         min-width: 400px;
     }
     .hero-content *{
-        min-width: 400px;
+        min-width: 510px;
     }
     .trafic_container{
         display: grid;
@@ -1023,6 +1023,7 @@ ul a,ul a:visited{
     .member_icon{
         height: 100%;
         width: 100%;
+        max-height: 256px;
     }
     .member_name{
         font-size: 30px;
