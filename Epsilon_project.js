@@ -105,16 +105,16 @@ var teamCard = [
     },{
         type: "Presentastion",
         title: "任務型氣球攻擊車",
-        serial: "編號",
+        serial: "B6",
         time: ["4:30", "4:50", "5:10", "5:20"],
-        tag: "主題分享",
-        description: ``,
-        supplement: ["C++", "Go", "whiteSpace", "Vrainfuck"],
+        tag: "機械組裝, 競技比賽",
+        description: `小時候，我們常常玩像遙控車這類遠端遙控的玩具，但大多用途都僅限於競速，有時會幻想能否在車子上加裝攻擊武器，讓汽車不只能競速還能拿來對戰。因此基於這個想法，在這次課程中我們透過設計車體、武器、移動方式等，思考如何才能在比賽中擊敗敵人拔得頭籌。`,
+        supplement: ["車體架構穩定性", "動力裝置組裝使用", "如何有效提高車子性能", "各式武器創意發想"],
         member: [
             {
                 name: "吳振宇",
-                introduction: "helllllooooooooooo",
-                img_url: "media/default_avatar.png"
+                introduction: "早安🤟🏿我是大同凡凡，住在遙遠的新店安坑的⛰上，新店地靈人傑，滋養了我表演的天份，演戲和rap通通不在話下。雖然我是科技組的，但是資訊能力也是讚讚的，可謂是人才啊！期待在這條路上繼續精進⋯⋯💋",
+                img_url: "media/avatar/16.jpg"
             },
             {
                 name: "劉竣祐 / 光祐 Guangyou",
