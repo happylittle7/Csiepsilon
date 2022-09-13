@@ -234,8 +234,11 @@ var teamCard = [
             },
             {
                 name: "范容齊",
-                introduction: "helllllooooooooooo",
-                img_url: "media/default_avatar.png"
+                introduction: `簡單直白話不多，講話從來不囉嗦<br>
+                構想設計動手做，沒有什麼不成功<br>
+                保守機警少承諾，結果注定不普通<br>
+                恐龍好可愛(๑>◡<๑)`,
+                img_url: "media/avatar/20.jpg"
             }
         ]
     },{
