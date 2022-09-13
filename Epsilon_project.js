@@ -83,12 +83,11 @@ var teamCard = [
         member: [
             {
                 name: "徐士哲",
-                introduction: `我家的貓，可愛吧 →
-                無所事事的高三生，對程式頗有興趣
-                超級懶，程式能力一天比一天爛，被班上大佬扁到站不起來
-                好歹在成發上投了不少心力
+                introduction: `無所事事的高三生，對程式頗有興趣<br>
+                超級懶，程式能力一天比一天爛，被班上大佬扁到站不起來<br>
+                好歹在成發上投了不少心力<br>
                 給我順利一點啊= =`,
-                img_url: "media/default_avatar.png"
+                img_url: "media/avatar/22.jpg"
             },
             {
                 name: "游恒",
@@ -203,7 +202,7 @@ var teamCard = [
                 name: "游以丞",
                 introduction: `負責unity及C#程式開發<br>
                 習慣每日寫一個功能或解決一個問題<br>
-                不知到為什麼常常被認成科技組`,
+                不知道為什麼常常被認成科技組`,
                 img_url: "media/avatar/28.jpg"
             },
             {
@@ -268,18 +267,18 @@ var teamCard = [
     },{
         type: "Presentastion",
         title: "單字急轉彎",
-        serial: "編號",
+        serial: "B4",
         time: ["4:30", "4:50", "5:10", "5:20"],
-        tag: "主題分享",
-        description: `在今年 2 月時，Linux kernel 5.8 之後被揭露了 arbitrary write read-only file 的漏洞，該漏洞被命名為 Dirty Pipe。對應到 Android 有 Google Pixel 6 和 SAMSUNG Galaxy S22 使用的 Android 12 可以觸發漏洞，我們嘗試在 Android 12 上透過此漏洞進行提權，並使用 Android Emulator x86_64 作為本次的環境。
-        在本次演講中，我們將會介紹如何透過 Dirty Pipe 劫持 init process、SELinux 實作細節並撰寫 kernel module 繞過 SELinux 和最後又是如何再度透過 Dirty Pipe 做到 load kernel module。`,
-        supplement: ["C++", "Go", "whiteSpace", "Vrainfuck"],
+        tag: "英文小遊戲",
+        description: `英文是目前通用率最高的語言，所以在現代台灣每個人從小學開始就需要學習英文，而英文對不管出社會後找工作或是與外國人溝通都是一項很方便的工具，讓我們需要去重視、學習它。<br>
+        其中英文單字是一項非常重要的能力，而這時候又出現一款英文益智網頁遊戲名為”wordle”，這是一個類似英文版的1A2B，因為這款遊戲，我突發奇想想說能不能自行開發出一款英文益智遊戲。 `,
+        supplement: ["App Inventor 2"],
         member: [
             {
                 name: "張文謙",
                 introduction: `高一開始接觸有關程式並產生興趣。
                 此次主題的平台是第一次使用正在努力學習中`,
-                img_url: "media/default_avatar.png"
+                img_url: "media/avatar/23.jpg"
             }
         ]
     },{
@@ -317,7 +316,7 @@ var teamCard = [
                 img_url: "media/avatar/18.jpg"
             },{
                 name: "張譽耀",
-                introduction: "資電班肝帝，手做還行吧",
+                introduction: "從小就喜歡組模型、組樂高、組有的沒的，對自己的手做算是蠻有信心的，現為班上計算機賽馬訓練權威🙃",
                 img_url: "media/avatar/26.jpg"
             },{
                 name: "杜立晟",
