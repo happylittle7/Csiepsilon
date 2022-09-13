@@ -125,8 +125,9 @@ var teamCard = [
             },
             {
                 name: "張詠翔",
-                introduction: "helllllooooooooooo",
-                img_url: "media/default_avatar.png"
+                introduction: `嗨！大家<br>
+                我來自淡水downtown 郵遞區號251的峰峰，從小就喜歡研究一些機器人，因此在高一時就選擇加入了資電專班，學習各式機械⚙️運作，另外我也非常喜歡唱歌🎤 ！現在正在這條路努力中，期待未來能夠創造更多作品~`,
+                img_url: "media/avatar/25.jpg"
             }
         ]
     },{
