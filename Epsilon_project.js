@@ -241,7 +241,7 @@ var teamCard = [
     },{
         type: "Presentastion",
         title: "Wordless最佳單字預測系統",
-        serial: "編號",
+        serial: "B3",
         time: ["4:30", "4:50", "5:10", "5:20"],
         tag: "主題分享",
         description: `Wordle在今年初風靡了全球，我的TimeLine也一度充滿著朋友的闖關狀況貼文。<br>
