@@ -142,7 +142,7 @@ var teamCard = [
             {
                 name: "王子潔",
                 introduction: "共引。",
-                img_url: "media/default_avatar.png"
+                img_url: "media/avatar/01.jpeg"
             },
             {
                 name: "郎翊辰",
@@ -197,7 +197,7 @@ var teamCard = [
         time: ["4:30", "4:50", "5:10", "5:20"],
         tag: "資料庫使用, 資料排序",
         description: "<p>每週到賣場採買是例行公事。在買回家後總是煩惱著要如何「整理」冰箱內的東西，食品還常常被埋沒在深處而被遺忘，直到壞掉有味道出現才被發現。由於上述情況，我們想用unity做出一個APP，輔助我們整理冰箱。預計功能要能紀錄冰箱內的東西有哪些，並能顯示出快要過期的食品，提醒我記得要處理這些食物，不要再放到壞了！</p><p>在這次的研究中我們成功的透過C#編寫Unity內程式碼及在網路上搜尋相關教學資源，得到相關知識的方式做出一個App，可以按照過期日期排出冰箱內的食材，在現有的介面下，還有很多可以改善的地方，希望在日後可以把更人性化的功能增加進來，並改善不方便的地方，讓使用者用起來更加輕鬆。</p>",
-        supplement: ["Unity C#"],
+        supplement: ["Unity", "C#"],
         member: [
             {
                 name: "游以丞",
@@ -230,13 +230,13 @@ var teamCard = [
             {
                 name: "黃資翔",
                 introduction: "科技組的一員，因為對於手作感到嚮往而加入資電班，進而發現機械結構的奧妙而深深被吸引。",
-                img_url: "media/default_avatar.png"
+                img_url: "media/avatar/31.jpg"
             },
             {
                 name: "陳鈺程",
                 introduction: `喜歡設計、手做，對設計遊戲腳色及組裝機械、樂高等尤其感興趣。高一時第一次接觸到了Rhinoceros後對繪圖設計更加著迷，稍微鑽研了一段時間，目前仍在學習，未來希望接觸更多不同繪圖軟體嘗試更多新的構思。<br>
                 <a href='https://www.youtube.com/watch?v=oz-prVP5qi4' target="_blank" rel="noreferrer noopener">傑出作品</a>`,
-                img_url: "media/default_avatar.png"
+                img_url: "media/avatar/27.jpg"
             },
             {
                 name: "范容齊",
@@ -288,8 +288,7 @@ var teamCard = [
         serial: "B5",
         time: ["4:30", "4:50", "5:10", "5:20"],
         tag: "深度學習, 程式卡關",
-        description: `在今年 2 月時，Linux kernel 5.8 之後被揭露了 arbitrary write read-only file 的漏洞，該漏洞被命名為 Dirty Pipe。對應到 Android 有 Google Pixel 6 和 SAMSUNG Galaxy S22 使用的 Android 12 可以觸發漏洞，我們嘗試在 Android 12 上透過此漏洞進行提權，並使用 Android Emulator x86_64 作為本次的環境。
-        在本次演講中，我們將會介紹如何透過 Dirty Pipe 劫持 init process、SELinux 實作細節並撰寫 kernel module 繞過 SELinux 和最後又是如何再度透過 Dirty Pipe 做到 load kernel module。`,
+        description: `簡單來說：寫人臉口罩辨識程式，然後卡關`,
         supplement: ["深度學習", "程式卡關"],
         member: [
             {
@@ -299,7 +298,7 @@ var teamCard = [
 
                 點開購物車完成結帳就是成功支付。
                 （n年前的照片→⁠）`,
-                img_url: "media/default_avatar.png"
+                img_url: "media/avatar/13.jpg"
             }
         ]
     },{
