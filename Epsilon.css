@@ -737,6 +737,8 @@ ul a,ul a:visited{
 }
 .supplement_parser::before{
     content: "你將會聽到...";
+    font-weight: 730;
+    font-size: 1.2em;
 }
 .supplement_parser ul{
     padding-top: 30px;

@@ -83,11 +83,12 @@ var teamCard = [
         member: [
             {
                 name: "徐士哲",
-                introduction: `無所事事的高三生，對程式頗有興趣<br>
-                超級懶，程式能力一天比一天爛，被班上大佬扁到站不起來<br>
-                好歹在成發上投了不少心力<br>
+                introduction: `我家的貓，可愛吧 →
+                無所事事的高三生，對程式頗有興趣
+                超級懶，程式能力一天比一天爛，被班上大佬扁到站不起來
+                好歹在成發上投了不少心力
                 給我順利一點啊= =`,
-                img_url: "media/avatar/22.jpg"
+                img_url: "media/default_avatar.png"
             },
             {
                 name: "游恒",
@@ -103,30 +104,18 @@ var teamCard = [
         ]
     },{
         type: "Presentastion",
-        title: "任務型氣球攻擊車",
-        serial: "B6",
+        title: "人臉口罩辨識",
+        serial: "編號",
         time: ["4:30", "4:50", "5:10", "5:20"],
-        tag: "機械組裝, 競技比賽",
-        description: `小時候，我們常常玩像遙控車這類遠端遙控的玩具，但大多用途都僅限於競速，有時會幻想能否在車子上加裝攻擊武器，讓汽車不只能競速還能拿來對戰。因此基於這個想法，在這次課程中我們透過設計車體、武器、移動方式等，思考如何才能在比賽中擊敗敵人拔得頭籌。`,
-        supplement: ["車體架構穩定性", "動力裝置組裝使用", "如何有效提高車子性能", "各式武器創意發想"],
+        tag: "深度學習, 程式卡關",
+        description: `在今年 2 月時，Linux kernel 5.8 之後被揭露了 arbitrary write read-only file 的漏洞，該漏洞被命名為 Dirty Pipe。對應到 Android 有 Google Pixel 6 和 SAMSUNG Galaxy S22 使用的 Android 12 可以觸發漏洞，我們嘗試在 Android 12 上透過此漏洞進行提權，並使用 Android Emulator x86_64 作為本次的環境。
+        在本次演講中，我們將會介紹如何透過 Dirty Pipe 劫持 init process、SELinux 實作細節並撰寫 kernel module 繞過 SELinux 和最後又是如何再度透過 Dirty Pipe 做到 load kernel module。`,
+        supplement: ["深度學習", "程式卡關"],
         member: [
             {
-                name: "吳振宇",
-                introduction: "早安🤟🏿我是大同凡凡，住在遙遠的新店安坑的⛰上，新店地靈人傑，滋養了我表演的天份，演戲和rap通通不在話下。雖然我是科技組的，但是資訊能力也是讚讚的，可謂是人才啊！期待在這條路上繼續精進⋯⋯💋",
-                img_url: "media/avatar/16.jpg"
-            },
-            {
-                name: "劉竣祐 / 光祐 Guangyou",
-                introduction: `國小為百齡國小資優班學生、國中為(區域衛星資賦優異方案)資優班學生、高中為資電學程班學生，從小對手作很有興趣，喜歡自己動手作出一些東西。生科能力極強(自稱)。高中認為數專太難考而轉考資電班，並嘗試在生科領域闖出一番天地。
-                高一後開始嘗試做YouTuber、作曲、寫歌、寫小說，直到高三才成功作出一首曲子(大部分為吉米幫助)。做YouTuber的契機是在國中被霸凌的三年時接觸到阿神後，成功從過往中走出，並希望自己能像阿神一樣帶給別人歡樂。
-                現為不知名YouTuber、類戰隊形式之公會(SuPer ASia)隊長、學測預備軍。<br>YouTube頻道(光祐Guangyou)：<a href="https://www.youtube.com/channel/UCI7OjJy-l1QAYZYuPaJYbag">https://www.youtube.com/channel/UCI7OjJy-l1QAYZYuPaJYbag</a><br>Twitcw頻道(光祐61757)：<a href="https://www.twitch.tv/guangyou61757">https://www.twitch.tv/guangyou61757</a>`,
-                img_url: "media/avatar/33.jpg"
-            },
-            {
-                name: "張詠翔",
-                introduction: `嗨！大家<br>
-                我來自淡水downtown 郵遞區號251的峰峰，從小就喜歡研究一些機器人，因此在高一時就選擇加入了資電專班，學習各式機械⚙️運作，另外我也非常喜歡唱歌🎤 ！現在正在這條路努力中，期待未來能夠創造更多作品~`,
-                img_url: "media/avatar/25.jpg"
+                name: "江威廷",
+                introduction: `你好<br>專題參考之程式碼網站：https://www.kaggle.com/code/sandhyakrishnan02/face-mask-detection-using-pytorch/notebook`,
+                img_url: "media/default_avatar.png"
             }
         ]
     },{
@@ -196,13 +185,13 @@ var teamCard = [
         time: ["4:30", "4:50", "5:10", "5:20"],
         tag: "資料庫使用, 資料排序",
         description: "<p>每週到賣場採買是例行公事。在買回家後總是煩惱著要如何「整理」冰箱內的東西，食品還常常被埋沒在深處而被遺忘，直到壞掉有味道出現才被發現。由於上述情況，我們想用unity做出一個APP，輔助我們整理冰箱。預計功能要能紀錄冰箱內的東西有哪些，並能顯示出快要過期的食品，提醒我記得要處理這些食物，不要再放到壞了！</p><p>在這次的研究中我們成功的透過C#編寫Unity內程式碼及在網路上搜尋相關教學資源，得到相關知識的方式做出一個App，可以按照過期日期排出冰箱內的食材，在現有的介面下，還有很多可以改善的地方，希望在日後可以把更人性化的功能增加進來，並改善不方便的地方，讓使用者用起來更加輕鬆。</p>",
-        supplement: ["Unity", "C#"],
+        supplement: ["Unity C#"],
         member: [
             {
                 name: "游以丞",
                 introduction: `負責unity及C#程式開發<br>
                 習慣每日寫一個功能或解決一個問題<br>
-                不知道為什麼常常被認成科技組`,
+                不知到為什麼常常被認成科技組`,
                 img_url: "media/avatar/28.jpg"
             },
             {
@@ -229,13 +218,13 @@ var teamCard = [
             {
                 name: "黃資翔",
                 introduction: "科技組的一員，因為對於手作感到嚮往而加入資電班，進而發現機械結構的奧妙而深深被吸引。",
-                img_url: "media/avatar/31.jpg"
+                img_url: "media/default_avatar.png"
             },
             {
                 name: "陳鈺程",
                 introduction: `喜歡設計、手做，對設計遊戲腳色及組裝機械、樂高等尤其感興趣。高一時第一次接觸到了Rhinoceros後對繪圖設計更加著迷，稍微鑽研了一段時間，目前仍在學習，未來希望接觸更多不同繪圖軟體嘗試更多新的構思。<br>
                 <a href='https://www.youtube.com/watch?v=oz-prVP5qi4' target="_blank" rel="noreferrer noopener">傑出作品</a>`,
-                img_url: "media/avatar/27.jpg"
+                img_url: "media/default_avatar.png"
             },
             {
                 name: "范容齊",
@@ -251,7 +240,7 @@ var teamCard = [
         title: "Wordless最佳單字預測系統",
         serial: "B3",
         time: ["4:30", "4:50", "5:10", "5:20"],
-        tag: "主題分享",
+        tag: "JavaScript, Google擴充功能",
         description: `Wordle在今年初風靡了全球，我的TimeLine也一度充滿著朋友的闖關狀況貼文。<br>
                       我透過學習JavaScript製作Google的擴充功能，取得每一筆輸入的輸出的狀況，以此為計算數據在Wordle上作弊，最終觀察這程式的效率。`,
         supplement: ["JavaScript", "Google擴充功能", `<span style="text-decoration:line-through">如何讓新鮮的肝快速榨乾</span>`],
@@ -267,33 +256,44 @@ var teamCard = [
     },{
         type: "Presentastion",
         title: "單字急轉彎",
-        serial: "B4",
+        serial: "編號",
         time: ["4:30", "4:50", "5:10", "5:20"],
-        tag: "英文小遊戲",
-        description: `英文是目前通用率最高的語言，所以在現代台灣每個人從小學開始就需要學習英文，而英文對不管出社會後找工作或是與外國人溝通都是一項很方便的工具，讓我們需要去重視、學習它。<br>
-        其中英文單字是一項非常重要的能力，而這時候又出現一款英文益智網頁遊戲名為”wordle”，這是一個類似英文版的1A2B，因為這款遊戲，我突發奇想想說能不能自行開發出一款英文益智遊戲。 `,
-        supplement: ["App Inventor 2"],
+        tag: "App Inventor2, 資料活用及處理",
+        description: `在今年 2 月時，Linux kernel 5.8 之後被揭露了 arbitrary write read-only file 的漏洞，該漏洞被命名為 Dirty Pipe。對應到 Android 有 Google Pixel 6 和 SAMSUNG Galaxy S22 使用的 Android 12 可以觸發漏洞，我們嘗試在 Android 12 上透過此漏洞進行提權，並使用 Android Emulator x86_64 作為本次的環境。
+        在本次演講中，我們將會介紹如何透過 Dirty Pipe 劫持 init process、SELinux 實作細節並撰寫 kernel module 繞過 SELinux 和最後又是如何再度透過 Dirty Pipe 做到 load kernel module。`,
+        supplement: ["C++", "Go", "whiteSpace", "Vrainfuck"],
         member: [
             {
                 name: "張文謙",
                 introduction: `高一開始接觸有關程式並產生興趣。
                 此次主題的平台是第一次使用正在努力學習中`,
-                img_url: "media/avatar/23.jpg"
+                img_url: "media/default_avatar.png"
             }
         ]
     },{
         type: "Presentastion",
-        title: "人臉口罩辨識",
+        title: "任務型氣球攻擊車",
         serial: "編號",
         time: ["4:30", "4:50", "5:10", "5:20"],
-        tag: "深度學習, 程式卡關",
-        description: `在今年 2 月時，Linux kernel 5.8 之後被揭露了 arbitrary write read-only file 的漏洞，該漏洞被命名為 Dirty Pipe。對應到 Android 有 Google Pixel 6 和 SAMSUNG Galaxy S22 使用的 Android 12 可以觸發漏洞，我們嘗試在 Android 12 上透過此漏洞進行提權，並使用 Android Emulator x86_64 作為本次的環境。
-        在本次演講中，我們將會介紹如何透過 Dirty Pipe 劫持 init process、SELinux 實作細節並撰寫 kernel module 繞過 SELinux 和最後又是如何再度透過 Dirty Pipe 做到 load kernel module。`,
-        supplement: ["深度學習", "程式卡關"],
+        tag: "主題分享",
+        description: ``,
+        supplement: ["C++", "Go", "whiteSpace", "Vrainfuck"],
         member: [
             {
-                name: "江威廷",
-                introduction: `你好<br>專題參考之程式碼網站：https://www.kaggle.com/code/sandhyakrishnan02/face-mask-detection-using-pytorch/notebook`,
+                name: "吳振宇",
+                introduction: "helllllooooooooooo",
+                img_url: "media/default_avatar.png"
+            },
+            {
+                name: "劉竣祐 / 光祐 Guangyou",
+                introduction: `國小為百齡國小資優班學生、國中為(區域衛星資賦優異方案)資優班學生、高中為資電學程班學生，從小對手作很有興趣，喜歡自己動手作出一些東西。生科能力極強(自稱)。高中認為數專太難考而轉考資電班，並嘗試在生科領域闖出一番天地。
+                高一後開始嘗試做YouTuber、作曲、寫歌、寫小說，直到高三才成功作出一首曲子(大部分為吉米幫助)。做YouTuber的契機是在國中被霸凌的三年時接觸到阿神後，成功從過往中走出，並希望自己能像阿神一樣帶給別人歡樂。
+                現為不知名YouTuber、類戰隊形式之公會(SuPer ASia)隊長、學測預備軍。<br>YouTube頻道(光祐Guangyou)：<a href="https://www.youtube.com/channel/UCI7OjJy-l1QAYZYuPaJYbag">https://www.youtube.com/channel/UCI7OjJy-l1QAYZYuPaJYbag</a><br>Twitcw頻道(光祐61757)：<a href="https://www.twitch.tv/guangyou61757">https://www.twitch.tv/guangyou61757</a>`,
+                img_url: "media/avatar/33.jpg"
+            },
+            {
+                name: "張詠翔",
+                introduction: "helllllooooooooooo",
                 img_url: "media/default_avatar.png"
             }
         ]
@@ -312,18 +312,18 @@ var teamCard = [
                 img_url: "media/avatar/34.jpg"
             },{
                 name: "林祐廷",
-                introduction: "自己動手總是一件有趣的事，如果不只限於興趣那就更好了，資電班科技組正是一個這樣的空間，這也正是為什麼我現在在這裡了。",
-                img_url: "media/avatar/18.jpg"
+                introduction: "helllllooooooooooo",
+                img_url: "media/default_avatar.png"
             },{
                 name: "張譽耀",
-                introduction: "從小就喜歡組模型、組樂高、組有的沒的，對自己的手做算是蠻有信心的，現為班上計算機賽馬訓練權威🙃",
-                img_url: "media/avatar/26.jpg"
+                introduction: "資電班肝帝，手做還行吧",
+                img_url: "media/default_avatar.png"
             },{
                 name: "杜立晟",
                 introduction: `高中肥宅
                 妄想長大要當很酷的工程師
                 但是好像比較喜歡物理(?`,
-                img_url: "media/avatar/17.jpg"
+                img_url: "media/default_avatar.png"
             }
         ]
     }
