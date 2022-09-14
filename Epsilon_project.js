@@ -83,12 +83,11 @@ var teamCard = [
         member: [
             {
                 name: "徐士哲",
-                introduction: `我家的貓，可愛吧 →
-                無所事事的高三生，對程式頗有興趣
-                超級懶，程式能力一天比一天爛，被班上大佬扁到站不起來
-                好歹在成發上投了不少心力
+                introduction: `無所事事的高三生，對程式頗有興趣<br>
+                超級懶，程式能力一天比一天爛，被班上大佬扁到站不起來<br>
+                好歹在成發上投了不少心力<br>
                 給我順利一點啊= =`,
-                img_url: "media/default_avatar.png"
+                img_url: "media/avatar/22.jpg"
             },
             {
                 name: "游恒",
@@ -191,7 +190,7 @@ var teamCard = [
                 name: "游以丞",
                 introduction: `負責unity及C#程式開發<br>
                 習慣每日寫一個功能或解決一個問題<br>
-                不知到為什麼常常被認成科技組`,
+                不知道為什麼常常被認成科技組`,
                 img_url: "media/avatar/28.jpg"
             },
             {
@@ -258,16 +257,16 @@ var teamCard = [
         title: "單字急轉彎",
         serial: "編號",
         time: ["4:30", "4:50", "5:10", "5:20"],
-        tag: "App Inventor2, 資料活用及處理",
-        description: `在今年 2 月時，Linux kernel 5.8 之後被揭露了 arbitrary write read-only file 的漏洞，該漏洞被命名為 Dirty Pipe。對應到 Android 有 Google Pixel 6 和 SAMSUNG Galaxy S22 使用的 Android 12 可以觸發漏洞，我們嘗試在 Android 12 上透過此漏洞進行提權，並使用 Android Emulator x86_64 作為本次的環境。
-        在本次演講中，我們將會介紹如何透過 Dirty Pipe 劫持 init process、SELinux 實作細節並撰寫 kernel module 繞過 SELinux 和最後又是如何再度透過 Dirty Pipe 做到 load kernel module。`,
-        supplement: ["C++", "Go", "whiteSpace", "Vrainfuck"],
+        tag: "App Inventor 2",
+        description: `英文是目前通用率最高的語言，所以在現代台灣每個人從小學開始就需要學習英文，而英文對不管出社會後找工作或是與外國人溝通都是一項很方便的工具，讓我們需要去重視、學習它。<br>
+        其中英文單字是一項非常重要的能力，而這時候又出現一款英文益智網頁遊戲名為”wordle”，這是一個類似英文版的1A2B，因為這款遊戲，我突發奇想想說能不能自行開發出一款英文益智遊戲。`,
+        supplement: ["App Inventor 2", "資料活用及處理"],
         member: [
             {
                 name: "張文謙",
                 introduction: `高一開始接觸有關程式並產生興趣。
                 此次主題的平台是第一次使用正在努力學習中`,
-                img_url: "media/default_avatar.png"
+                img_url: "media/avatar/23.jpg"
             }
         ]
     },{
@@ -276,13 +275,13 @@ var teamCard = [
         serial: "編號",
         time: ["4:30", "4:50", "5:10", "5:20"],
         tag: "主題分享",
-        description: ``,
-        supplement: ["C++", "Go", "whiteSpace", "Vrainfuck"],
+        description: `小時候，我們常常玩像遙控車這類遠端遙控的玩具，但大多用途都僅限於競速，有時會幻想能否在車子上加裝攻擊武器，讓汽車不只能競速還能拿來對戰。因此基於這個想法，在這次課程中我們透過設計車體、武器、移動方式等，思考如何才能在比賽中擊敗敵人拔得頭籌。`,
+        supplement: ["車體架構穩定性", "動力裝置組裝使用", "如何有效提高車子性能", "各式武器創意發想"],
         member: [
             {
                 name: "吳振宇",
-                introduction: "helllllooooooooooo",
-                img_url: "media/default_avatar.png"
+                introduction: "早安🤟🏿我是大同凡凡，住在遙遠的新店安坑的⛰上，新店地靈人傑，滋養了我表演的天份，演戲和rap通通不在話下。雖然我是科技組的，但是資訊能力也是讚讚的，可謂是人才啊！期待在這條路上繼續精進⋯⋯💋",
+                img_url: "media/avatar/16.jpg"
             },
             {
                 name: "劉竣祐 / 光祐 Guangyou",
@@ -293,8 +292,9 @@ var teamCard = [
             },
             {
                 name: "張詠翔",
-                introduction: "helllllooooooooooo",
-                img_url: "media/default_avatar.png"
+                introduction: `嗨！大家<br>
+                我來自淡水downtown 郵遞區號251的峰峰，從小就喜歡研究一些機器人，因此在高一時就選擇加入了資電專班，學習各式機械⚙️運作，另外我也非常喜歡唱歌🎤 ！現在正在這條路努力中，期待未來能夠創造更多作品~`,
+                img_url: "media/avatar/25.jpg"
             }
         ]
     },{
@@ -302,7 +302,7 @@ var teamCard = [
         title: "參數設計",
         serial: "A4",
         time: ["4:30", "4:50", "5:10", "5:20"],
-        tag: "主數位加工, 立體建模, 3D列印, 雷射雕刻",
+        tag: "數位加工, 立體建模, 3D列印, 雷射雕刻",
         description: "在現代生活中，參數設計這門課題已是與我們不可分割的一部份了，像是設計大樓、零件、車子都有他的身影。參數設計的基本思想是通過選擇系統中所有參數(包括原材料、零件、元件等)的最佳水平組合，從而儘量減少外部、内部和產品間三種干擾的影響,使所設計的產品質量特性波動小，穩定性好。另外，在參數設計階段，一般選用能滿足使用環境條件的最低質量等級的元件和性價比高的加工精度來進行設計，使產品的質量和成本兩方面均得到改善。",
         supplement: ["雷雕機", "3D列印機", "Rhino 6", "Paneling Tool","布林運算"],
         member: [
@@ -312,18 +312,18 @@ var teamCard = [
                 img_url: "media/avatar/34.jpg"
             },{
                 name: "林祐廷",
-                introduction: "helllllooooooooooo",
-                img_url: "media/default_avatar.png"
+                introduction: "自己動手總是一件有趣的事，如果不只限於興趣那就更好了，資電班科技組正是一個這樣的空間，這也正是為什麼我現在在這裡了。",
+                img_url: "media/avatar/18.jpg"
             },{
                 name: "張譽耀",
-                introduction: "資電班肝帝，手做還行吧",
-                img_url: "media/default_avatar.png"
+                introduction: "從小就喜歡組模型、組樂高、組有的沒的，對自己的手做算是蠻有信心的，現為班上計算機賽馬訓練權威🙃",
+                img_url: "media/avatar/26.jpg"
             },{
                 name: "杜立晟",
                 introduction: `高中肥宅
                 妄想長大要當很酷的工程師
                 但是好像比較喜歡物理(?`,
-                img_url: "media/default_avatar.png"
+                img_url: "media/avatar/17.jpg"
             }
         ]
     }
