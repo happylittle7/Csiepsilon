@@ -23,7 +23,7 @@ var teamCard = [
                 name: "余易宸",
                 introduction: `動手做最讚了<br> 
                 喜歡看金庸小說 最近在看鹿鼎記`,
-                img_url: "media/default_avatar.png"
+                img_url: "media/avatar/14.jpg"
             }
         ]
     },{
