@@ -682,7 +682,10 @@ ul a,ul a:visited{
     opacity: 0;
     visibility: hidden;
     transition: all 0.5s;
-    
+    cursor: pointer;
+}
+.close_button *{
+    cursor: pointer;
 }
 .close_button_active{
     opacity: 1;
