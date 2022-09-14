@@ -2,12 +2,12 @@ var teamCard = [
     {
         type: "Presentastion",
         title: "玩偶機構設計",
-        serial: "編號",
+        serial: "A1",
         time: ["4:30", "4:50", "5:10", "5:20"],
         tag: "3D建模, 人偶製作",
         description: `大家是否有這種經驗呢？經過百貨公司的櫥窗看到玩具店里自己隨著音樂活動的神奇人偶呢？玩偶機構就是類似於這樣的存在，雖然沒有音樂，但透過樂高齒輪和玩偶的連接，每個機構都可以展現出自己的特色。
         你將會聽到.....`,
-        supplement: ["創意設計", "3D建模", "辛苦但有趣的製作過程", "如何看到老婆動起來"],
+        supplement: ["創意設計", "3D建模", "辛苦但有趣的製作過程", "<span class='delete'>如何看到老婆動起來</span>"],
         member: [
             {
                 name: "塗嘉云",
@@ -103,18 +103,31 @@ var teamCard = [
         ]
     },{
         type: "Presentastion",
-        title: "人臉口罩辨識",
-        serial: "編號",
+        title: "參數設計",
+        serial: "A4",
         time: ["4:30", "4:50", "5:10", "5:20"],
-        tag: "深度學習, 程式卡關",
-        description: `在今年 2 月時，Linux kernel 5.8 之後被揭露了 arbitrary write read-only file 的漏洞，該漏洞被命名為 Dirty Pipe。對應到 Android 有 Google Pixel 6 和 SAMSUNG Galaxy S22 使用的 Android 12 可以觸發漏洞，我們嘗試在 Android 12 上透過此漏洞進行提權，並使用 Android Emulator x86_64 作為本次的環境。
-        在本次演講中，我們將會介紹如何透過 Dirty Pipe 劫持 init process、SELinux 實作細節並撰寫 kernel module 繞過 SELinux 和最後又是如何再度透過 Dirty Pipe 做到 load kernel module。`,
-        supplement: ["深度學習", "程式卡關"],
+        tag: "數位加工, 立體建模, 3D列印, 雷射雕刻",
+        description: "在現代生活中，參數設計這門課題已是與我們不可分割的一部份了，像是設計大樓、零件、車子都有他的身影。參數設計的基本思想是通過選擇系統中所有參數(包括原材料、零件、元件等)的最佳水平組合，從而儘量減少外部、内部和產品間三種干擾的影響,使所設計的產品質量特性波動小，穩定性好。另外，在參數設計階段，一般選用能滿足使用環境條件的最低質量等級的元件和性價比高的加工精度來進行設計，使產品的質量和成本兩方面均得到改善。",
+        supplement: ["雷雕機", "3D列印機", "Rhino 6", "Paneling Tool","布林運算"],
         member: [
             {
-                name: "江威廷",
-                introduction: `你好<br>專題參考之程式碼網站：https://www.kaggle.com/code/sandhyakrishnan02/face-mask-detection-using-pytorch/notebook`,
-                img_url: "media/default_avatar.png"
+                name: "蔡坤霖",
+                introduction: "我從小就對空間這方面的東西有很大的興趣，不管是樂高、房子、立體結構到蟲洞(?)，所以當高中有相關的專班我就進來了，雖然進來後才知道我們是最後一屆🙄",
+                img_url: "media/avatar/34.jpg"
+            },{
+                name: "林祐廷",
+                introduction: "自己動手總是一件有趣的事，如果不只限於興趣那就更好了，資電班科技組正是一個這樣的空間，這也正是為什麼我現在在這裡了。",
+                img_url: "media/avatar/18.jpg"
+            },{
+                name: "張譽耀",
+                introduction: "從小就喜歡組模型、組樂高、組有的沒的，對自己的手做算是蠻有信心的，現為班上計算機賽馬訓練權威🙃",
+                img_url: "media/avatar/26.jpg"
+            },{
+                name: "杜立晟",
+                introduction: `高中肥宅
+                妄想長大要當很酷的工程師
+                但是好像比較喜歡物理(?`,
+                img_url: "media/avatar/17.jpg"
             }
         ]
     },{
@@ -128,7 +141,7 @@ var teamCard = [
         member: [
             {
                 name: "王子潔",
-                introduction: "helllllooooooooooo",
+                introduction: "共引。",
                 img_url: "media/default_avatar.png"
             },
             {
@@ -255,7 +268,7 @@ var teamCard = [
     },{
         type: "Presentastion",
         title: "單字急轉彎",
-        serial: "編號",
+        serial: "B4",
         time: ["4:30", "4:50", "5:10", "5:20"],
         tag: "App Inventor 2",
         description: `英文是目前通用率最高的語言，所以在現代台灣每個人從小學開始就需要學習英文，而英文對不管出社會後找工作或是與外國人溝通都是一項很方便的工具，讓我們需要去重視、學習它。<br>
@@ -271,8 +284,28 @@ var teamCard = [
         ]
     },{
         type: "Presentastion",
+        title: "人臉口罩辨識",
+        serial: "B5",
+        time: ["4:30", "4:50", "5:10", "5:20"],
+        tag: "深度學習, 程式卡關",
+        description: `在今年 2 月時，Linux kernel 5.8 之後被揭露了 arbitrary write read-only file 的漏洞，該漏洞被命名為 Dirty Pipe。對應到 Android 有 Google Pixel 6 和 SAMSUNG Galaxy S22 使用的 Android 12 可以觸發漏洞，我們嘗試在 Android 12 上透過此漏洞進行提權，並使用 Android Emulator x86_64 作為本次的環境。
+        在本次演講中，我們將會介紹如何透過 Dirty Pipe 劫持 init process、SELinux 實作細節並撰寫 kernel module 繞過 SELinux 和最後又是如何再度透過 Dirty Pipe 做到 load kernel module。`,
+        supplement: ["深度學習", "程式卡關"],
+        member: [
+            {
+                name: "江威廷",
+                introduction: `失敗為成功之母，那誰是成功之父？<br><br><br><br>
+
+
+                點開購物車完成結帳就是成功支付。
+                （n年前的照片→⁠）`,
+                img_url: "media/default_avatar.png"
+            }
+        ]
+    },{
+        type: "Presentastion",
         title: "任務型氣球攻擊車",
-        serial: "編號",
+        serial: "B6",
         time: ["4:30", "4:50", "5:10", "5:20"],
         tag: "主題分享",
         description: `小時候，我們常常玩像遙控車這類遠端遙控的玩具，但大多用途都僅限於競速，有時會幻想能否在車子上加裝攻擊武器，讓汽車不只能競速還能拿來對戰。因此基於這個想法，在這次課程中我們透過設計車體、武器、移動方式等，思考如何才能在比賽中擊敗敵人拔得頭籌。`,
@@ -295,35 +328,6 @@ var teamCard = [
                 introduction: `嗨！大家<br>
                 我來自淡水downtown 郵遞區號251的峰峰，從小就喜歡研究一些機器人，因此在高一時就選擇加入了資電專班，學習各式機械⚙️運作，另外我也非常喜歡唱歌🎤 ！現在正在這條路努力中，期待未來能夠創造更多作品~`,
                 img_url: "media/avatar/25.jpg"
-            }
-        ]
-    },{
-        type: "Presentastion",
-        title: "參數設計",
-        serial: "A4",
-        time: ["4:30", "4:50", "5:10", "5:20"],
-        tag: "數位加工, 立體建模, 3D列印, 雷射雕刻",
-        description: "在現代生活中，參數設計這門課題已是與我們不可分割的一部份了，像是設計大樓、零件、車子都有他的身影。參數設計的基本思想是通過選擇系統中所有參數(包括原材料、零件、元件等)的最佳水平組合，從而儘量減少外部、内部和產品間三種干擾的影響,使所設計的產品質量特性波動小，穩定性好。另外，在參數設計階段，一般選用能滿足使用環境條件的最低質量等級的元件和性價比高的加工精度來進行設計，使產品的質量和成本兩方面均得到改善。",
-        supplement: ["雷雕機", "3D列印機", "Rhino 6", "Paneling Tool","布林運算"],
-        member: [
-            {
-                name: "蔡坤霖",
-                introduction: "我從小就對空間這方面的東西有很大的興趣，不管是樂高、房子、立體結構到蟲洞(?)，所以當高中有相關的專班我就進來了，雖然進來後才知道我們是最後一屆🙄",
-                img_url: "media/avatar/34.jpg"
-            },{
-                name: "林祐廷",
-                introduction: "自己動手總是一件有趣的事，如果不只限於興趣那就更好了，資電班科技組正是一個這樣的空間，這也正是為什麼我現在在這裡了。",
-                img_url: "media/avatar/18.jpg"
-            },{
-                name: "張譽耀",
-                introduction: "從小就喜歡組模型、組樂高、組有的沒的，對自己的手做算是蠻有信心的，現為班上計算機賽馬訓練權威🙃",
-                img_url: "media/avatar/26.jpg"
-            },{
-                name: "杜立晟",
-                introduction: `高中肥宅
-                妄想長大要當很酷的工程師
-                但是好像比較喜歡物理(?`,
-                img_url: "media/avatar/17.jpg"
             }
         ]
     }
@@ -363,9 +367,11 @@ function editCard(i){
                 <h1 class="team_agenda_title">` + teamCard[i].title + `</h1>
                 <div class="team_agenda_time">`
                     + teamCard[i].serial +
-                    `<ul>`
+                    `<ul>
+                    /*
                         + timeDOM +
-                    `</ul>
+                    */
+                    </ul>
                 </div>
                 <div class="team_agenda_content">
                     <div class="team_dialog">
