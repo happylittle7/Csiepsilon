@@ -262,7 +262,7 @@ var teamCard = [
                 introduction: `我原本入學時就報名了資電班入試，不知道為甚麼面試就被刷下去了<br>
                 高一上了Ｃ++的課後開始<span class='delete'>認真</span>學習程式<br>
                 題外話，這網頁也是我寫的呦`,
-                img_url: "media/default_avatar.png"
+                img_url: "media/avatar/12.jpg"
             }
         ]
     },{
