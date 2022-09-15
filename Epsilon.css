@@ -538,7 +538,6 @@ ul a,ul a:visited{
     font-weight: 400;
 }
 .event-info ul{
-    visibility: hidden;
     font-size: 0;
     text-align: right;
 }
@@ -778,6 +777,10 @@ ul a,ul a:visited{
 }
 .little{
     font-size: 12px;
+}
+.bold{
+    font-weight: 540;
+    font-size: 1.2em;
 }
 
 .member_name{

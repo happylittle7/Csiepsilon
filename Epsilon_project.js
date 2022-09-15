@@ -16,7 +16,7 @@ var teamCard = [
             },
             {
                 name: "靳皓雅",
-                introduction: "本名如上，可以叫我吉米。<br>高一時因緣際會(不想寫程式)下進入了科技組。<br>涉略的領域有油跟不油的，3D建模跟設計只是我的興趣，作編曲才是我(目前)的專長啦JOJO。<br>最後，看到我可以祝我一聲學測加油好嗎?",
+                introduction: "本名如上，可以叫我吉米。<br>高一時因緣際會(不想寫程式)下進入了科技組。<br>涉略的領域有油跟不油的，3D建模跟設計只是我的興趣，作編曲才是我(目前)的專長啦JOJO。<br>最後，看到我可以祝我一聲學測加油好嗎?<br><a class='bold' href='https://www.youtube.com./watch?v=dQw4w9WgXcQ'>點我看成發小彩蛋</a>",
                 img_url: "media/avatar/06.jpg"
             },
             {
