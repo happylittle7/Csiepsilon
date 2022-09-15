@@ -702,14 +702,14 @@ ul a,ul a:visited{
     text-align: left;
     font-size: 15px;
     letter-spacing: -1px;
-    font-weight: 500;
+    font-weight: 540;
 }
 .team_agenda_time ul{
     display: inline;
     font-size: 0;
 }
 .team_agenda_time ul li{
-    font-size: 15px;
+    font-size: 16px;
     display: inline;
     padding-left: 10px;
 }
