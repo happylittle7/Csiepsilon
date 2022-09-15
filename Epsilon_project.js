@@ -43,8 +43,13 @@ var teamCard = [
         member: [
             {
                 name: "吳俊廷",
-                introduction: "helllllooooooooooo",
-                img_url: "media/default_avatar.png"
+                introduction: `忠誠乖乖信徒，平時喜歡打程式競賽，大括號換行甚麼的都是毒瘤！<br>
+                平常使用的 Handle 是 happylittle7，但請不要叫我快樂小七...<br>
+                對了我是這次成發的總召喔~期望這次成發順利!<br>
+                和Storzfish和Edorzmond一起架了個程式解題平台，歡迎大家來參觀。<br>
+                CodingSHE的H : <a href="https://codingshe.cf">https://codingshe.cf</a><br>
+                另外有空的話歡迎大家來我的Blog逛逛:<a href="https://happylittle7.github.io">https://happylittle7.github.io</a>`,
+                img_url: "media/avatar/15.jpg"
             },
             {
                 name: "王心妤 / Starfish",
@@ -176,7 +181,7 @@ var teamCard = [
                 img_url: "media/avatar/11.jpg"
             },{
                 name: "江彥蓁",
-                introduction: "我是科技組的總召。曾參加許相關競賽，如WRO、FLL等。順帶一提，我是這次成發的主持人喔!",
+                introduction: "我是科技組的總召。曾參加許多相關競賽，如WRO、FLL等。順帶一提，我是這次成發的主持人喔!",
                 img_url: "media/avatar/03.jpg"
             },
             {
